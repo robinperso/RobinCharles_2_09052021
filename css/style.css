@@ -1,0 +1,28 @@
+/*
+ Description:  Feuille de style du projet 2 OpenClassrooms
+ Author:       Robin Charles
+ Version:      0.1
+*/
+
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+
+/* Boutons filtres */
+
+#outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+    display: inline-block;
+}
