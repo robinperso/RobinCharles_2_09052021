@@ -10,12 +10,12 @@ body {
 }
 
 h1 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
 /* Boutons filtres */
+/* attention, les boutons n'héritent pas de la police ...*/
 
 .outer
 {
