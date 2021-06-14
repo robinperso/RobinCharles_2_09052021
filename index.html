@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <title>Reservia - Accueil</title>
@@ -16,9 +16,7 @@
 
         <div id="header">
             <div id="logo">
-                <svg width="97" height="45">
-                    <image xlink:href="img/logo/Reservia.svg" src="img/logo/Reservia.png" width="97" height="45" />
-                </svg>
+                <a href="/index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
             </div>
             
             <div id="menu">
@@ -44,8 +42,8 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <form>
-                <input type="text" name="" id="recherche" value="Marseille, France" />
-                <input type="submit" name="" id="bouton-recherche" value="Rechercher">
+                <input type="text" name="champs-recherche" id="recherche" value="Marseille, France" />
+                <input type="submit" name="bouton-recherche" id="bouton-recherche" value="Rechercher">
             </form>
 
             <div id="filtres">
@@ -58,13 +56,13 @@
                 </div>
             </div>
 
-            <p><i class="fas fa-info-circle" fa-2x></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i class="fas fa-info-circle fa-lg" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             <!-- la version icône entourée et light est payante avec Font Awesome : <i class="fal fa-info-circle"></i> -->
 
         </div><!-- fin header -->
 
 
-        <div id="corps de page">
+        <div id="corps-de-page">
 
             <div id="premiere-section">
                 <div id="hebergement">
