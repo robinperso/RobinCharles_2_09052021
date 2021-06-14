@@ -17,7 +17,7 @@ h1 {
 
 /* Boutons filtres */
 
-#outer
+.outer
 {
     width:100%;
     text-align: left;
@@ -31,6 +31,6 @@ h1 {
 
 /* footer */
 
-#footer {
+.footer {
     background-color: #F2F2F2;
 }
