@@ -12,7 +12,6 @@ body {
 }
 
 h1 {
-    font-weight: 600;
     margin-bottom: -10px;
 }
 
@@ -29,13 +28,27 @@ ul {
 
 
 
+/* RECHERCHE 
+*/
+
+.fa-stack { 
+    font-size: 0.8em; 
+}
+.fa-stack i { 
+    vertical-align: middle; 
+}
+.fa-circle {
+    color: #f2f2f2;
+}
+.fa-info {
+    color: #0065ff;
+}
+
+
+
 /* FILTRES 
 attention, les boutons n'héritent pas de la police ...
 */
-
-.fas {
-    color:#4290e2;
-}
 
 .ligne-bouton
 {
