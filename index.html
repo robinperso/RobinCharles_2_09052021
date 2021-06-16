@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <title>Reservia - Accueil</title>
+        <title>Accueil - Reservia</title>
     
         <!-- manque le favicon -->
         <link rel="icon" href="favicon.ico" />
@@ -16,43 +16,38 @@
     </head>
 
     <body>
+        <div id="top">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
+                </div>
 
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
-            </div>
-            
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </header>
+
             <nav>
                 <ul class="deux-choix">
-                    <li>
-                        <a href="#">Hébergements</a>
-                    </li>
-                    <li>
-                        <a href="#">Activités</a>
-                    </li>
-                    <li>
-                        <a href="#">S'inscrire</a>
-                    </li>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
-        </header><!-- fin header -->
+        </div><!-- fin top -->
 
-        <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-
+        <!-- recherche et filtres -->
             <form>
                 <input type="text" name="champs-recherche" class="recherche" value="Marseille, France" />
                 <input type="submit" name="bouton-recherche" class="bouton-recherche" value="Rechercher">
             </form>
 
-            <div class="filtres">
+            <div id="filtres">
                 <h2>Filtres</h2>
                 <div class="outer">
-                    <div class="inner"><button type="submit" class="bouton-filtres" onclick="return false;">Économique</button></div>
-                    <div class="inner"><button type="submit" class="bouton-filtres" onclick="return false;">Familial</button></div>
-                    <div class="inner"><button type="submit" class="bouton-filtres" onclick="return false;">Romantique</button></div>
-                    <div class="inner"><button type="submit" class="bouton-filtres" onclick="return false;">Animaux autorisés</button></div>
+                    <div class="inner"><button type="submit" onclick="return false;">Économique</button></div>
+                    <div class="inner"><button type="submit" onclick="return false;">Familial</button></div>
+                    <div class="inner"><button type="submit" onclick="return false;">Romantique</button></div>
+                    <div class="inner"><button type="submit" onclick="return false;">Animaux autorisés</button></div>
                 </div>
             </div>
 
@@ -60,44 +55,47 @@
                 <!-- 
                 la version icône entourée et light est pour les comptes Pro avec Font Awesome : 
                 <i class="fal fa-info-circle"></i> 
-                peut-être que c'est possible de mettre un cercle autour d'un i bleu et de couleur grise ?
+                peut-être que c'est possible de mettre un cercle grisé autour d'un i bleu ?
                 -->                
-        </section><!-- fin haut de page-->
+        <!-- fin recherche et filtres -->
 
-        <section>
-            <h2>Hébergements à Marseille</h2>
-        </section>
+        <main>
+            <section>
+                <h2>Hébergements à Marseille</h2>
+            </section>
 
-        <section>
-            <h2>Les plus populaires</h2>
-        </section> 
+            <section>
+                <h2>Les plus populaires</h2>
+            </section> 
 
-        <section>
-            <h2>Activités à Marseille</h2>
-        </section>
-
-        <!-- fin corps de page-->
+            <section>
+                <h2>Activités à Marseille</h2>
+                
+                <h3>vieux Port</h3>
+            </section>
+        </main><!-- fin corps de page-->
 
         <footer>
-            <div class="a-propos">
-                <h3>A propos</h3>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de ventes</p>
-                <p>Données et confidentialité</p>
-            </div>
+            <div id="footer">    
+                <div class="footer-bloc">
+                    <h3>A propos</h3>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales de ventes</p>
+                    <p>Données et confidentialité</p>
+                </div>
 
-            <div class="nos-hebergements">
-                <h3>Nos hébergements</h3>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
-            </div>
+                <div class="footer-bloc">
+                    <h3>Nos hébergements</h3>
+                    <p>Charte qualité</p>
+                    <p>Soumettre votre hôtel</p>
+                </div>
 
-            <div class="Assistance">
-                <h3>Assistance</h3>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
-            </div>
-        </footer><!--fin footer -->
-
+                <div class="footer-bloc">
+                    <h3>Assistance</h3>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </div>
+            </div><!-- fin footer -->
+        </footer>
     </body>
 </html>

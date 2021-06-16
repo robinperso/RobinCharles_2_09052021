@@ -5,18 +5,30 @@
 */
 
 /* les éléments titres sont en thin semi bold et le le texte en thin regular, il faut supprimer ce thin... */
+/* est-ce que le titre h1, le champs de recherche et les boutons filtres ont la même taille ? */
+
 body {
     font-family: "Raleway", sans-serif;
 }
 
-/* est-ce que le titre H1, le champs de recherche et les boutons filtres ont la même taille ? */
-h1 {
 
+
+
+/* NAV 
+*/
+#top {
+    display:flex;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
-/* Boutons filtres */
-/* attention, les boutons n'héritent pas de la police ...*/
+
+/* FILTRES 
+attention, les boutons n'héritent pas de la police ...
+*/
 
 .outer
 {
@@ -30,8 +42,23 @@ h1 {
 
 
 
-/* footer */
+/* FOOTER 
+*/
 
-.footer {
+#footer {
     background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-bloc {
+    margin: 20px 30px;  
+}
+.footer-bloc:nth-child(1) {
+    flex: 1;
+}
+.footer-bloc:nth-child(2) {
+    flex: 1;
+}
+.footer-bloc:nth-child(3) {
+    flex: 1;
 }
