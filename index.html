@@ -16,26 +16,26 @@
     </head>
 
     <body>
-        <div id="top">
-            <header>
+        <header>
+            <div id="top">
                 <div class="logo">
                     <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
                 </div>
-
-                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </header>
-
             <nav>
-                <ul class="deux-choix">
+                <ul>
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
-        </div><!-- fin top -->
+            </div>
+            
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+        </header><!-- fin top -->
 
         <!-- recherche et filtres -->
+        <section id="recherche-et-filtres">
             <form>
                 <input type="text" name="champs-recherche" class="recherche" value="Marseille, France" />
                 <input type="submit" name="bouton-recherche" class="bouton-recherche" value="Rechercher">
@@ -43,59 +43,71 @@
 
             <div id="filtres">
                 <h2>Filtres</h2>
-                <div class="outer">
-                    <div class="inner"><button type="submit" onclick="return false;">Économique</button></div>
-                    <div class="inner"><button type="submit" onclick="return false;">Familial</button></div>
-                    <div class="inner"><button type="submit" onclick="return false;">Romantique</button></div>
-                    <div class="inner"><button type="submit" onclick="return false;">Animaux autorisés</button></div>
+                <div class="ligne-bouton">
+                    <div class="bouton"><button type="submit" onclick="return false;">Économique</button></div>
+                    <div class="bouton"><button type="submit" onclick="return false;">Familial</button></div>
+                    <div class="bouton"><button type="submit" onclick="return false;">Romantique</button></div>
+                    <div class="bouton"><button type="submit" onclick="return false;">Animaux autorisés</button></div>
                 </div>
             </div>
 
-            <p><i class="fas fa-info-circle fa-lg" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i class="fas fa-info-circle fa-lg" aria-hidden="true"></i> Plus de 500 logements sont disponibles dans cette ville</p> 
                 <!-- 
-                la version icône entourée et light est pour les comptes Pro avec Font Awesome : 
+                la version d'icône entourée et "light" est réservé aux comptes Pro avec Font Awesome : 
                 <i class="fal fa-info-circle"></i> 
-                peut-être que c'est possible de mettre un cercle grisé autour d'un i bleu ?
-                -->                
-        <!-- fin recherche et filtres -->
+                peut-être que c'est possible d'inversé et de mettre un cercle grisé autour d'un i bleu ?
+                -->         
+
+        </section><!-- fin recherche et filtres -->
 
         <main>
-            <section>
+
+            <section id="hebergement">
                 <h2>Hébergements à Marseille</h2>
             </section>
 
-            <section>
+            <section id="populaires">
                 <h2>Les plus populaires</h2>
             </section> 
 
-            <section>
+            <section id="activites">
                 <h2>Activités à Marseille</h2>
-                
-                <h3>vieux Port</h3>
+
+                <div class="container">
+                    <div class="item" style="height: 400px"></div>
+                    <div class="item" style="height: 250px"></div>
+                    <div class="item" style="height: 400px"></div>
+                    <div class="item" style="height: 250px"></div>
+                    <div class="item" style="height: 120px"></div>
+                    <div class="item" style="height: 120px"></div>
+                    
+                    <span class="item break"></span>
+                    <span class="item break"></span>
+                    <span class="item break"></span>
+                  </div>
             </section>
+
         </main><!-- fin corps de page-->
 
-        <footer>
-            <div id="footer">    
-                <div class="footer-bloc">
-                    <h3>A propos</h3>
+        <footer id="footer">    
+            <div class="footer-bloc">
+                <h3>A propos</h3>
                     <p>Fonctionnement du site</p>
                     <p>Conditions générales de ventes</p>
                     <p>Données et confidentialité</p>
-                </div>
+            </div>
 
-                <div class="footer-bloc">
-                    <h3>Nos hébergements</h3>
-                    <p>Charte qualité</p>
-                    <p>Soumettre votre hôtel</p>
-                </div>
+            <div class="footer-bloc">
+                <h3>Nos hébergements</h3>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </div>
 
-                <div class="footer-bloc">
-                    <h3>Assistance</h3>
-                    <p>Centre d'aide</p>
-                    <p>Nous contacter</p>
-                </div>
-            </div><!-- fin footer -->
+            <div class="footer-bloc">
+                <h3>Assistance</h3>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
         </footer>
     </body>
 </html>
