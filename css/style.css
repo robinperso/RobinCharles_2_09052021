@@ -4,14 +4,14 @@
  Version:      0.1
 */
 
-
+/* les éléments titres sont en thin semi bold et le le texte en thin regular, il faut supprimer ce thin... */
 body {
     font-family: "Raleway", sans-serif;
 }
 
+/* est-ce que le titre H1, le champs de recherche et les boutons filtres ont la même taille ? */
 h1 {
-    font-weight: 600;
-    font-size: 1.5em;
+
 }
 
 
