@@ -31,6 +31,61 @@ ul {
 /* RECHERCHE 
 */
 
+#position-icon {
+    background: #f2f2f2;
+    padding:10px 15px;
+    border-radius:10px 0 0 10px;
+    -moz-border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    -o-border-radius:10px 0 0 10px;
+    border:0 none;
+    margin-right:-4px;
+}
+
+#search-input {
+    background: #fff;
+    padding:10px;
+    border-radius:0px 0 0 0px;
+    -moz-border-radius:0px 0 0 0px;
+    -webkit-border-radius:0px 0 0 0px;
+    -o-border-radius:0px 0 0 0px;
+    /*border:0 none;*/
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    width:160px;
+    font-weight:bold;
+}
+     
+#search-button {
+    background:#0065ff;
+    color:white;
+    font: 'Raleway';
+    padding:10px 20px;
+    border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    -o-border-radius:0 10px 10px 0;
+    border:0 none;
+    font-weight:bold;
+    margin-left:-4px;
+}
+  
+
+.container-search {
+    display: flex;
+}
+  
+.container-search input[type="text"] {
+      flex: 1 1 auto;
+}
+
+
+
+/* Icône avertissement "plus de 500 logements..."
+*/
+
 .fa-stack { 
     font-size: 0.8em; 
 }
@@ -106,7 +161,7 @@ attention, les boutons n'héritent pas de la police ...
     content: counter(items);
   }
   
-  /* Re-order items into 3 rows */
+  /* Re-order items into 4 rows */
   .item:nth-of-type(4n+1) { order: 1; }
   .item:nth-of-type(4n+2) { order: 2; }
   .item:nth-of-type(4n+3) { order: 3; }

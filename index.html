@@ -21,25 +21,39 @@
                 <div class="logo">
                     <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
                 </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">Hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
+                        <li><a href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
             </div>
             
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-        </header><!-- fin top -->
+        </header><!-- fin header -->
 
-        <!-- recherche et filtres -->
         <section id="recherche-et-filtres">
-            <form>
-                <input type="text" name="champs-recherche" class="recherche" value="Marseille, France" />
-                <input type="submit" name="bouton-recherche" class="bouton-recherche" value="Rechercher">
+            
+            <form action="/" style="display:inline;" method="get">
+                <span id="position-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <input type="text" id="search-input" value="Marseille, France">
+                <input type="submit" id="search-button" value="Rechercher">
             </form>
+            
+
+            <br /><br />
+            <!--essais de bouton recherche avec Flexbox 
+            voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
+            -->
+            <form>
+                <div id="container-search">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="search-text" value="Marseille, France">
+                    <input type="submit" value="Send"></div>
+            </form>
+
 
             <div id="filtres">
                 <h2>Filtres</h2>
@@ -56,12 +70,9 @@
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-info fa-stack-1x"></i>
                 </span> 
-                <!-- 
-                la version d'icône entourée et "light" est réservé aux comptes Pro avec Font Awesome : 
-                <i class="fal fa-info-circle"></i> 
-                -->     
-                Plus de 500 logements sont disponibles dans cette ville</p> 
-    
+                <!-- la version d'icône entourée et "light" est réservé aux comptes Pro avec Font Awesome : 
+                    <i class="fal fa-info-circle"></i> -->     
+                Plus de 500 logements sont disponibles dans cette ville</p>     
 
         </section><!-- fin recherche et filtres -->
 
@@ -90,8 +101,8 @@
                     <span class="item break"></span>
                     <span class="item break"></span>
                   </div>
-            </section>
 
+            </section>
         </main><!-- fin corps de page-->
 
         <footer id="footer">    
@@ -101,13 +112,11 @@
                     <p>Conditions générales de ventes</p>
                     <p>Données et confidentialité</p>
             </div>
-
             <div class="footer-bloc">
                 <h3>Nos hébergements</h3>
                 <p>Charte qualité</p>
                 <p>Soumettre votre hôtel</p>
             </div>
-
             <div class="footer-bloc">
                 <h3>Assistance</h3>
                 <p>Centre d'aide</p>
