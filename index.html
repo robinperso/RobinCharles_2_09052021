@@ -42,27 +42,25 @@
                 <input type="submit" id="search-button" value="Rechercher">
             </form>
             
-
-            <br /><br />
             <!--essais de bouton recherche avec Flexbox 
             voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
             -->
+            <p>Essai avec Flex :</p>
             <form>
                 <div id="container-search">
                     <i class="fas fa-map-marker-alt"></i>
                     <input type="text" id="search-text" value="Marseille, France">
-                    <input type="submit" value="Send"></div>
+                    <input type="submit" value="Send">
+                </div>
             </form>
 
 
             <div id="filtres">
                 <h2>Filtres</h2>
-                <div class="ligne-bouton">
-                    <div class="bouton"><button type="submit" onclick="return false;">Économique</button></div>
-                    <div class="bouton"><button type="submit" onclick="return false;">Familial</button></div>
-                    <div class="bouton"><button type="submit" onclick="return false;">Romantique</button></div>
-                    <div class="bouton"><button type="submit" onclick="return false;">Animaux autorisés</button></div>
-                </div>
+                    <button type="submit" onclick="return false;">Économique</button>
+                    <button type="submit" onclick="return false;">Familial</button>
+                    <button type="submit" onclick="return false;">Romantique</button>
+                    <button type="submit" onclick="return false;">Animaux autorisés</button>
             </div>
 
             <p>
@@ -72,7 +70,8 @@
                 </span> 
                 <!-- la version d'icône entourée et "light" est réservé aux comptes Pro avec Font Awesome : 
                     <i class="fal fa-info-circle"></i> -->     
-                Plus de 500 logements sont disponibles dans cette ville</p>     
+                Plus de 500 logements sont disponibles dans cette ville
+            </p>     
 
         </section><!-- fin recherche et filtres -->
 
