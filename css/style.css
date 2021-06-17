@@ -72,11 +72,11 @@ ul {
     margin-left:-4px;
 }
   
-
+/* essai de bouton recherche en flex */
 .container-search {
     display: flex;
 }
-  
+
 .container-search input[type="text"] {
       flex: 1 1 auto;
 }
@@ -105,15 +105,7 @@ ul {
 attention, les boutons n'héritent pas de la police ...
 */
 
-.ligne-bouton
-{
-    width:100%;
-    text-align: left;
-}
-.bouton
-{
-    display: inline-block;
-}
+
 
 
 
