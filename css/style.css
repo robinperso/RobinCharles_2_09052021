@@ -10,8 +10,8 @@ il faut se passer de ce thin...
 
 est-ce que le titre h1, le champs de recherche et les boutons filtres ont la même taille ? 
 
-il faut fixer la police et augmenter sa taille dans le champs de recherche et le bouton idoine...
-car attention, les boutons n'héritent pas de la police, c'est la police système qui est utilisée par défaut...
+il faut fixer la police et augmenter sa taille dans le champs de recherche et le bouton associé...
+car les boutons n'héritent pas de la police, c'est la police système qui est utilisée par défaut...
 
 */
 
@@ -112,7 +112,7 @@ h1 {
 
 
 
-/* Activités
+/* ACTIVITÉS
 */
 
 .container {
