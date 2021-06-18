@@ -4,11 +4,19 @@
  Version:      0.1
 */
 
-/* les éléments titres sont en thin semi bold et le le texte en thin regular, il faut supprimer ce thin... */
-/* est-ce que le titre h1, le champs de recherche et les boutons filtres ont la même taille ? */
+/* notes : 
+les éléments titres sont en thin semi bold et le le texte en thin regular, 
+il faut se passer de ce thin... 
+
+est-ce que le titre h1, le champs de recherche et les boutons filtres ont la même taille ? 
+
+il faut fixer la police et augmenter sa taille dans le champs de recherche et le bouton idoine...
+car attention, les boutons n'héritent pas de la police, c'est la police système qui est utilisée par défaut...
+
+*/
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", "Sans serif";
 }
 
 h1 {
@@ -22,10 +30,6 @@ h1 {
     display:flex;
 }
 
-ul {
-    list-style-type: none;
-}
-
 
 
 /* RECHERCHE 
@@ -33,7 +37,7 @@ ul {
 
 #position-icon {
     background: #f2f2f2;
-    padding:10px 15px;
+    padding:15px 15px;
     border-radius:10px 0 0 10px;
     -moz-border-radius:10px 0 0 10px;
     -webkit-border-radius:10px 0 0 10px;
@@ -44,12 +48,11 @@ ul {
 
 #search-input {
     background: #fff;
-    padding:10px;
+    padding:15px;
     border-radius:0px 0 0 0px;
     -moz-border-radius:0px 0 0 0px;
     -webkit-border-radius:0px 0 0 0px;
     -o-border-radius:0px 0 0 0px;
-    /*border:0 none;*/
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
@@ -61,8 +64,8 @@ ul {
 #search-button {
     background:#0065ff;
     color:white;
-    font: 'Raleway';
-    padding:10px 20px;
+    font-family: "Raleway";
+    padding:15px 20px;
     border-radius:0 10px 10px 0;
     -moz-border-radius:0 10px 10px 0;
     -webkit-border-radius:0 10px 10px 0;
@@ -87,7 +90,7 @@ ul {
 */
 
 .fa-stack { 
-    font-size: 0.8em; 
+    font-size: 0.8em; /* un peu plus fort ? */
 }
 .fa-stack i { 
     vertical-align: middle; 
@@ -102,7 +105,6 @@ ul {
 
 
 /* FILTRES 
-attention, les boutons n'héritent pas de la police ...
 */
 
 
@@ -110,7 +112,7 @@ attention, les boutons n'héritent pas de la police ...
 
 
 
-/* VIGNETTES
+/* Activités
 */
 
 .container {

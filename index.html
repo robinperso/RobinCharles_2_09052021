@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Accueil - Reservia</title>
-    
-        <!-- manque le favicon -->
+
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" type="image/png" href="favicon.png" />
 
@@ -16,36 +15,30 @@
     </head>
 
     <body>
-        <header>
-            <div id="top">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+        <header id="top">
+            <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>         
+            <nav>
+                <a href="#hebergement">Hébergements</a>
+                <a href="#populaire">Activités</a>
+            </nav>
+            <a href="#">S'inscrire</a>
         </header><!-- fin header -->
 
-        <section id="recherche-et-filtres">
-            
+        <section id="search-and-filter">
+                    
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+
             <form action="/" style="display:inline;" method="get">
                 <span id="position-icon"><i class="fas fa-map-marker-alt"></i></span>
                 <input type="text" id="search-input" value="Marseille, France">
                 <input type="submit" id="search-button" value="Rechercher">
             </form>
             
-            <!--essais de bouton recherche avec Flexbox 
+            <!-- essais de bouton recherche avec Flexbox 
             voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
             -->
-            <p>Essai avec Flex :</p>
+            <p>(ci-dessous : essai en cours avec Flex)</p>
             <form>
                 <div id="container-search">
                     <i class="fas fa-map-marker-alt"></i>
@@ -54,24 +47,30 @@
                 </div>
             </form>
 
-
             <div id="filtres">
                 <h2>Filtres</h2>
-                    <button type="submit" onclick="return false;">Économique</button>
-                    <button type="submit" onclick="return false;">Familial</button>
-                    <button type="submit" onclick="return false;">Romantique</button>
-                    <button type="submit" onclick="return false;">Animaux autorisés</button>
+                    <button type="submit" onclick="return false;">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Économique
+                    </button>
+                    <button type="submit" onclick="return false;">
+                        <i class="fas fa-child"></i>
+                        Familial
+                    </button>
+                    <button type="submit" onclick="return false;">
+                        <i class="fas fa-heart"></i>
+                        Romantique
+                    </button>
+                    <button type="submit" onclick="return false;">
+                        <i class="fas fa-dog"></i>
+                        Animaux autorisés
+                    </button>
             </div>
 
-            <p>
-                <span class="fa-stack">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-info fa-stack-1x"></i>
-                </span> 
-                <!-- la version d'icône entourée et "light" est réservé aux comptes Pro avec Font Awesome : 
-                    <i class="fal fa-info-circle"></i> -->     
-                Plus de 500 logements sont disponibles dans cette ville
-            </p>     
+            <!-- "plus de 500..." : la version d'icône entourée et "light" est réservé aux comptes Pro --> 
+            <p><span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fas fa-info fa-stack-1x"></i></span>
+                &nbsp;Plus de 500 logements sont disponibles dans cette ville
+            </p>    
 
         </section><!-- fin recherche et filtres -->
 
@@ -81,7 +80,7 @@
                 <h2>Hébergements à Marseille</h2>
             </section>
 
-            <section id="populaires">
+            <section id="populaire">
                 <h2>Les plus populaires</h2>
             </section> 
 
