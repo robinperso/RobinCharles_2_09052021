@@ -2,21 +2,21 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Accueil - Reservia</title>
 
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" type="image/png" href="favicon.png" />
-
         <link href="fonts/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->     
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap" rel="stylesheet"> 
-
         <link href="css/style.css" rel="stylesheet" media="all" type="text/css" />
     </head>
 
     <body>
         <header id="top">
-            <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>         
+            <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>         
             <nav>
                 <a href="#hebergement">Hébergements</a>
                 <a href="#populaire">Activités</a>
@@ -24,7 +24,7 @@
             <a href="#">S'inscrire</a>
         </header><!-- fin header -->
 
-        <section id="search-and-filter">
+        <div id="search-and-filter">
             <header>
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
@@ -36,8 +36,7 @@
                 <input type="submit" id="search-button" value="Rechercher">
             </form>
             <!-- essais de bouton recherche avec Flexbox 
-            voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
-            -->
+            voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire        
             <p>(ci-dessous : essai en cours avec Flex)</p>
             <form>
                 <div id="container-search">
@@ -45,7 +44,7 @@
                     <input type="text" id="search-text" value="Marseille, France">
                     <input type="submit" value="Send">
                 </div>
-            </form>
+            </form -->
 
             <div id="filtres">
                 <h2>Filtres</h2>
@@ -75,34 +74,28 @@
                 &nbsp;Plus de 500 logements sont disponibles dans cette ville
             </p>    
 
-        </section><!-- fin recherche et filtres -->
+        </div><!-- fin recherche et filtres -->
 
         <main>
-
             <section id="hebergement">
                 <h2>Hébergements à Marseille</h2>
+                    <article>
+                        <div>
+                            <!-- background-img=url, background-(border?) =center, background-size=cover-->
+                            <h3>...</h3>
+                            <!-- étoiles -->
+                        </div>
+                    </article>
             </section>
 
-            <section id="populaire">
+            <aside id="populaire">
                 <h2>Les plus populaires</h2>
-            </section> 
+            </aside> 
 
             <section id="activites">
                 <h2>Activités à Marseille</h2>
 
-                <div class="container">
-                    <div class="item" style="height: 400px"></div>
-                    <div class="item" style="height: 250px"></div>
-                    <div class="item" style="height: 400px"></div>
-                    <div class="item" style="height: 250px"></div>
-                    <div class="item" style="height: 120px"></div>
-                    <div class="item" style="height: 120px"></div>
-                    
-                    <span class="item break"></span>
-                    <span class="item break"></span>
-                    <span class="item break"></span>
-                  </div>
-
+                
             </section>
         </main><!-- fin corps de page-->
 

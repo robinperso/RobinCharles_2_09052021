@@ -8,15 +8,15 @@
 les éléments titres sont en thin semi bold et le le texte en thin regular, 
 il faut se passer de ce thin... 
 
-est-ce que le titre h1, le champs de recherche et les boutons filtres ont la même taille ? 
+il semble que le titre h1, le champs de recherche et les boutons filtres ont la même taille...? 
 
 il faut fixer la police et augmenter sa taille dans le champs de recherche et le bouton associé...
 car les boutons n'héritent pas de la police, c'est la police système qui est utilisée par défaut...
 
 */
 
-body {
-    font-family: "Raleway", "Sans serif";
+* {
+    font-family: 'Raleway', 'Sans serif';
 }
 
 h1 {
@@ -24,16 +24,15 @@ h1 {
 }
 
 
-/* NAV 
-*/
+/* NAV */
+
 #top {
     display:flex;
 }
 
 
 
-/* RECHERCHE 
-*/
+/* RECHERCHE */
 
 #position-icon {
     background: #f2f2f2;
@@ -86,8 +85,7 @@ h1 {
 
 
 
-/* Icône avertissement "plus de 500 logements..."
-*/
+/* Icône avertissement "plus de 500 logements..." */
 
 .fa-stack { 
     font-size: 0.8em; /* un peu plus fort ? */
@@ -103,86 +101,25 @@ h1 {
 }
 
 
-
-/* FILTRES 
-*/
+/* FILTRES */
 
 
 
+/* IMG */
 
 
 
-/* ACTIVITÉS
-*/
 
-.container {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    /* Your container needs a fixed height, and it 
-     * needs to be taller than your tallest column. */
-    height: 500px;
-    
-    /* Optional */
-    background-color: #f7f7f7;
-    border-radius: 3px;
-    padding: 20px;
-    width: 100%;
-    margin: 40px auto;
-    counter-reset: items;
-  }
-  
-  .item {
-    width: 24%;
-    /* Optional */
-    position: relative;
-    margin-bottom: 2%;
-    border-radius: 3px;
-    background-color: #a1cbfa;
-    border: 1px solid #4290e2;
-    box-shadow: 0 2px 2px rgba(0,90,250,0.05),
-      0 4px 4px rgba(0,90,250,0.05),
-      0 8px 8px rgba(0,90,250,0.05),
-      0 16px 16px rgba(0,90,250,0.05);
-    color: #fff;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-  
-   /* Just to print out numbers */
-  div.item::before {
-    counter-increment: items;
-    content: counter(items);
-  }
-  
-  /* Re-order items into 4 rows */
-  .item:nth-of-type(4n+1) { order: 1; }
-  .item:nth-of-type(4n+2) { order: 2; }
-  .item:nth-of-type(4n+3) { order: 3; }
-  .item:nth-of-type(4n+4) { order: 4; }
-  .item:nth-of-type(4n+5) { order: 5; }
-  .item:nth-of-type(4n) { order: 6; }
-  
-  /* Force new columns */
-  .break {
-    flex-basis: 100%;
-    width: 0;
-    border: 1px solid #ddd;
-    margin: 0;
-    content: "";
-    padding: 0;
-  }
-  
- 
+/* ACTIVITÉS */
 
 
 
-/* FOOTER 
-*/
+/* FOOTER */
 
 #footer {
     background-color: #F2F2F2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 .footer-bloc {
