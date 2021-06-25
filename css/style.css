@@ -4,11 +4,11 @@
  Version:      0.1
 */
 
-/* notes : 
-les éléments titres sont en thin semi bold et le le texte en thin regular, 
-il faut se passer de ce thin... 
+/* notes :
+les éléments titres sont en thin semi bold et le le texte en thin regular,
+il faut se passer de ce thin...
 
-il semble que le titre h1, le champs de recherche et les boutons filtres ont la même taille...? 
+il semble que le titre h1, le champs de recherche et les boutons filtres ont la même taille...?
 
 il faut fixer la police et augmenter sa taille dans le champs de recherche et le bouton associé...
 car les boutons n'héritent pas de la police, c'est la police système qui est utilisée par défaut...
@@ -59,7 +59,7 @@ h1 {
     width:160px;
     font-weight:bold;
 }
-     
+
 #search-button {
     background:#0065ff;
     color:white;
@@ -73,7 +73,7 @@ h1 {
     font-weight:bold;
     margin-left:-4px;
 }
-  
+
 /* essai de bouton recherche en flex */
 .container-search {
     display: flex;
@@ -87,11 +87,11 @@ h1 {
 
 /* Icône avertissement "plus de 500 logements..." */
 
-.fa-stack { 
+.fa-stack {
     font-size: 0.8em; /* un peu plus fort ? */
 }
-.fa-stack i { 
-    vertical-align: middle; 
+.fa-stack i {
+    vertical-align: middle;
 }
 .fa-circle {
     color: #f2f2f2;
@@ -107,8 +107,63 @@ h1 {
 
 /* IMG */
 
+/* MAIN */
 
+main {
+    border: solid 1px yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+#hebergement {
+    background-color: lightgray;
+    width:68%;
+    padding-bottom: 12px;
+}
+
+#populaire {
+    width: 28%;
+}
+
+.article-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.article-container article {
+    width: 30%;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 4px auto;
+}
+
+.article-container article div.img {
+    background-image: url('img/activites/fort-de-pomegues.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+    #hebergement {
+        order: 2;
+        width: 100%;
+    }
+
+    #populaire {
+        order: 1;
+        width: 100%;
+    }
+
+    .article-container article {
+        width: 94%;
+        margin: 4px; auto;
+    }
+}
 
 /* ACTIVITÉS */
 
@@ -123,7 +178,7 @@ h1 {
     justify-content: flex-start;
 }
 .footer-bloc {
-    margin: 20px 30px;  
+    margin: 20px 30px;
 }
 .footer-bloc:nth-child(1) {
     flex: 1;

@@ -8,15 +8,15 @@
 
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" type="image/png" href="favicon.png" />
-        <link href="fonts/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->     
+        <link href="fonts/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" media="all" type="text/css" />
     </head>
 
     <body>
         <header id="top">
-            <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>         
+            <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
             <nav>
                 <a href="#hebergement">Hébergements</a>
                 <a href="#populaire">Activités</a>
@@ -35,8 +35,8 @@
                 <input type="text" id="search-input" value="Marseille, France">
                 <input type="submit" id="search-button" value="Rechercher">
             </form>
-            <!-- essais de bouton recherche avec Flexbox 
-            voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire        
+            <!-- essais de bouton recherche avec Flexbox
+            voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
             <p>(ci-dessous : essai en cours avec Flex)</p>
             <form>
                 <div id="container-search">
@@ -66,40 +66,70 @@
                     </button>
             </div>
 
-            <!-- la version d'icône awesome cerclée et "light" est réservé aux comptes Pro --> 
+            <!-- la version d'icône awesome cerclée et "light" est réservé aux comptes Pro -->
             <p><span class="fa-stack">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-info fa-stack-1x"></i>
                 </span>
                 &nbsp;Plus de 500 logements sont disponibles dans cette ville
-            </p>    
+            </p>
 
         </div><!-- fin recherche et filtres -->
 
         <main>
+
             <section id="hebergement">
                 <h2>Hébergements à Marseille</h2>
-                    <article>
-                        <div>
-                            <!-- background-img=url, background-(border?) =center, background-size=cover-->
-                            <h3>...</h3>
-                            <!-- étoiles -->
-                        </div>
-                    </article>
+                    <div class="article-container">
+                        <article>
+                            <div class="img">
+                                <h3>Maison 1</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img">
+                                <h3>Maison 1</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img">
+                                <h3>Maison 1</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img">
+                                <h3>Maison 1</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img">
+                                <h3>Maison 1</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img">
+                                <!-- background-img=url, background-(border?) =center, background-size=cover-->
+                                <h3>Miaons 6</h3>
+                                <!-- étoiles -->
+                            </div>
+                        </article>
+                    </div>
             </section>
 
             <aside id="populaire">
                 <h2>Les plus populaires</h2>
-            </aside> 
+            </aside>
 
-            <section id="activites">
-                <h2>Activités à Marseille</h2>
 
-                
-            </section>
         </main><!-- fin corps de page-->
 
-        <footer id="footer">    
+        <section id="activites">
+            <h2>Activités à Marseille</h2>
+
+
+        </section>
+
+        <footer id="footer">
             <div class="footer-bloc">
                 <h3>A propos</h3>
                     <p>Fonctionnement du site</p>
