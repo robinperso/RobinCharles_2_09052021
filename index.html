@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Accueil - Reservia</title>
 
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="description" content="La description de la page." />
+        <!-- mode de rendu sur IE
+            IE=edge signifie qu'IE doit utiliser la dernière version de son moteur de rendu
+            chrome=1 signifie qu'IE doit utiliser le moteur de rendu Chrome s'il est installé -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Afin de forcer le bon niveau de zoom aux navigateurs mobiles, 
+            mais aussi pour leur imposer une largeur de viewport 
+            voir https://www.alsacreations.com/article/lire/1490-Comprendre-le-Viewport-dans-le-Web-mobile.html -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- favicon, le minimum... -->
         <link rel="icon" href="favicon.ico" />
         <link rel="icon" type="image/png" href="favicon.png" />
-        <link href="fonts/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+
+        <!-- polices -->
+        <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+        
+        <!-- styles CSS -->
         <link href="css/style.css" rel="stylesheet" media="all" type="text/css" />
     </head>
 
     <body>
         <header id="top">
-            <a href="index.html"><img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" /></a>
+            <a href="/">
+                <!-- on utilise l'icône SVG en priorité ... -->
+                <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
+            </a>
             <nav>
                 <a href="#hebergement">Hébergements</a>
                 <a href="#populaire">Activités</a>
             </nav>
-            <a href="#">S'inscrire</a>
+                <a href="#">S'inscrire</a>
         </header><!-- fin header -->
 
         <div id="search-and-filter">
@@ -29,52 +46,65 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </header>
+            
+            <div id="recherche">
+                <form action="/" style="display:inline;" method="get">
+                    <span id="recherche-icone">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <input type="text" id="recherche-texte" value="Marseille, France">
+                    <input type="submit" id="recherche-bouton" value="Rechercher">
+                </form>
+            </div>
 
-            <form action="/" style="display:inline;" method="get">
-                <span id="position-icon"><i class="fas fa-map-marker-alt"></i></span>
-                <input type="text" id="search-input" value="Marseille, France">
-                <input type="submit" id="search-button" value="Rechercher">
-            </form>
             <!-- essais de bouton recherche avec Flexbox
             voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
             <p>(ci-dessous : essai en cours avec Flex)</p>
             <form>
-                <div id="container-search">
+                <div id="container-search-flex">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" id="search-text" value="Marseille, France">
-                    <input type="submit" value="Send">
+                    <input type="text" id="search-text-flex" value="Marseille, France">
+                    <input type="submit" id="search-button-flex" value="Rechercher">
                 </div>
             </form -->
 
-            <div id="filtres">
-                <h2>Filtres</h2>
-                    <button type="submit" onclick="return false;">
-                        <i class="fas fa-money-bill-wave"></i>
-                        Économique
-                    </button>
-                    <button type="submit" onclick="return false;">
-                        <i class="fas fa-child"></i>
-                        Familial
-                    </button>
-                    <button type="submit" onclick="return false;">
-                        <i class="fas fa-heart"></i>
-                        Romantique
-                    </button>
-                    <button type="submit" onclick="return false;">
-                        <i class="fas fa-dog"></i>
-                        Animaux autorisés
-                    </button>
+            <div class="filtres">
+                <h2 class="titre-filtres">Filtres</h2>
+                <div class="bouton-filtre">
+                    <div class="bouton-filtre-icone">
+                        <i class="fas fa-money-bill-wave bouton-filtre-icone"></i>
+                    </div>
+                    <span class="bouton-filtre-texte">Économique</span>
+                </div>
+                <div class="bouton-filtre">
+                    <div class="bouton-filtre-icone">
+                        <i class="fas fa-child bouton-filtre-icone"></i>
+                    </div>
+                    <span class="bouton-filtre-texte">Familial</span>
+                </div>
+                <div class="bouton-filtre">
+                    <div class="bouton-filtre-icone">
+                        <i class="fas fa-heart bouton-filtre-icone"></i>
+                    </div>
+                    <span class="bouton-filtre-texte">Romantique</span>
+                </div>
+                <div class="bouton-filtre">
+                    <div class="bouton-filtre-icone">
+                        <i class="fas fa-dog bouton-filtre-icone"></i>
+                    </div>
+                    <span class="bouton-filtre-texte">Animaux autorisés</span>
+                </div>
             </div>
 
-            <!-- la version d'icône awesome cerclée et "light" est réservé aux comptes Pro -->
-            <p><span class="fa-stack">
+            <p>
+                <span class="fa-stack">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-info fa-stack-1x"></i>
                 </span>
                 &nbsp;Plus de 500 logements sont disponibles dans cette ville
             </p>
 
-        </div><!-- fin recherche et filtres -->
+        </div><!-- fin search-and-filter -->
 
         <main>
 
@@ -120,8 +150,7 @@
                 <h2>Les plus populaires</h2>
             </aside>
 
-
-        </main><!-- fin corps de page-->
+        </main><!-- fin hebergement et populaire -->
 
         <section id="activites">
             <h2>Activités à Marseille</h2>

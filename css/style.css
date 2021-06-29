@@ -4,24 +4,18 @@
  Version:      0.1
 */
 
-/* notes :
-les éléments titres sont en thin semi bold et le le texte en thin regular,
-il faut se passer de ce thin...
-
-il semble que le titre h1, le champs de recherche et les boutons filtres ont la même taille...?
-
-il faut fixer la police et augmenter sa taille dans le champs de recherche et le bouton associé...
-car les boutons n'héritent pas de la police, c'est la police système qui est utilisée par défaut...
-
+/* notes pour la police :
+- les éléments titres sont en thin regular, il faut se passer de ce thin...
+- il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille...
+- les boutons n'héritent pas automatiquement de la police, c'est la police système qui est utilisée par défaut...
 */
 
+
 * {
-    font-family: 'Raleway', 'Sans serif';
+    font-family: "Raleway", "Sans serif";
 }
 
-h1 {
-    margin-bottom: -10px;
-}
+/* TOP */
 
 
 /* NAV */
@@ -30,11 +24,23 @@ h1 {
     display:flex;
 }
 
+/* HEADER */
+
+header h1 {
+    margin-bottom: -10px;
+}
 
 
-/* RECHERCHE */
+/* RECHERCHE 
+-moz-border-radius pose problème dans la console... propriété inconnue...
+*/
 
-#position-icon {
+#recherche {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#recherche-icone {
     background: #f2f2f2;
     padding:15px 15px;
     border-radius:10px 0 0 10px;
@@ -45,7 +51,7 @@ h1 {
     margin-right:-4px;
 }
 
-#search-input {
+#recherche-texte {
     background: #fff;
     padding:15px;
     border-radius:0px 0 0 0px;
@@ -57,10 +63,11 @@ h1 {
     border-left: none;
     border-right: none;
     width:160px;
-    font-weight:bold;
+    /*font-size: 0.8em;*/
+    font-weight: bold;
 }
 
-#search-button {
+#recherche-bouton {
     background:#0065ff;
     color:white;
     font-family: "Raleway";
@@ -70,22 +77,25 @@ h1 {
     -webkit-border-radius:0 10px 10px 0;
     -o-border-radius:0 10px 10px 0;
     border:0 none;
+    /*font-size: 0.8em;*/
     font-weight:bold;
     margin-left:-4px;
 }
 
 /* essai de bouton recherche en flex */
-.container-search {
+.container-search-flex {
     display: flex;
 }
 
-.container-search input[type="text"] {
+.container-search-flex input[type="text"] {
       flex: 1 1 auto;
 }
 
 
 
-/* Icône avertissement "plus de 500 logements..." */
+/* Icône avertissement "plus de 500 logements..." 
+la version d'icône awesome cerclée et "light" est réservé aux comptes Pro
+*/
 
 .fa-stack {
     font-size: 0.8em; /* un peu plus fort ? */
@@ -103,9 +113,48 @@ h1 {
 
 /* FILTRES */
 
+.filtres {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.titre-filtres {
+    margin: 0 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.bouton-filtre {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+
+.bouton-filtre-icone {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+
+.bouton-filtre-texte {
+    margin: 0 1rem;
+}
 
 
-/* IMG */
 
 /* MAIN */
 
@@ -142,7 +191,7 @@ main {
 }
 
 .article-container article div.img {
-    background-image: url('img/activites/fort-de-pomegues.jpg');
+    background-image: url("../img/activites/fort-de-pomegues.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,6 +201,7 @@ main {
     #hebergement {
         order: 2;
         width: 100%;
+        /* padding ou padding-bottom ? */
     }
 
     #populaire {
@@ -161,7 +211,7 @@ main {
 
     .article-container article {
         width: 94%;
-        margin: 4px; auto;
+        margin: 4px auto;
     }
 }
 
@@ -177,9 +227,11 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
 .footer-bloc {
     margin: 20px 30px;
 }
+
 .footer-bloc:nth-child(1) {
     flex: 1;
 }
