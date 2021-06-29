@@ -1,7 +1,7 @@
 /*
  Description:  Feuille de style du projet 2 OpenClassrooms
  Author:       Robin Charles
- Version:      0.1
+ Version:      0.2
 */
 
 /* notes pour la police :
@@ -10,6 +10,9 @@
 - les boutons n'héritent pas automatiquement de la police, c'est la police système qui est utilisée par défaut...
 */
 
+/* note pour les padding : 
+en rem ou en px ? 
+*/
 
 * {
     font-family: "Raleway", "Sans serif";
@@ -32,7 +35,12 @@ header h1 {
 
 
 /* RECHERCHE 
--moz-border-radius pose problème dans la console... propriété inconnue...
+
+-moz-border-radius pose problème dans la console : propriété inconnue...
+utilité de ce code ? : 
+    -moz-border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    -o-border-radius:10px 0 0 10px;
 */
 
 #recherche {
@@ -44,9 +52,6 @@ header h1 {
     background: #f2f2f2;
     padding:15px 15px;
     border-radius:10px 0 0 10px;
-    -moz-border-radius:10px 0 0 10px;
-    -webkit-border-radius:10px 0 0 10px;
-    -o-border-radius:10px 0 0 10px;
     border:0 none;
     margin-right:-4px;
 }
@@ -55,9 +60,6 @@ header h1 {
     background: #fff;
     padding:15px;
     border-radius:0px 0 0 0px;
-    -moz-border-radius:0px 0 0 0px;
-    -webkit-border-radius:0px 0 0 0px;
-    -o-border-radius:0px 0 0 0px;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
@@ -73,16 +75,15 @@ header h1 {
     font-family: "Raleway";
     padding:15px 20px;
     border-radius:0 10px 10px 0;
-    -moz-border-radius:0 10px 10px 0;
-    -webkit-border-radius:0 10px 10px 0;
-    -o-border-radius:0 10px 10px 0;
     border:0 none;
     /*font-size: 0.8em;*/
     font-weight:bold;
     margin-left:-4px;
 }
 
-/* essai de bouton recherche en flex */
+/* essai de bouton recherche en flex 
+voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
+*/
 .container-search-flex {
     display: flex;
 }
@@ -93,12 +94,18 @@ header h1 {
 
 
 
-/* Icône avertissement "plus de 500 logements..." 
-la version d'icône awesome cerclée et "light" est réservé aux comptes Pro
+/* AVERTISSEMENT :
+"plus de 500 logements..." 
+la version d'icône awesome cerclée (grisée) et "light" est réservé aux comptes Pro
 */
 
+#avertissement {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 .fa-stack {
-    font-size: 0.8em; /* un peu plus fort ? */
+    font-size: 0.8em; /* mettre un peu plus fort ? */
 }
 .fa-stack i {
     vertical-align: middle;
@@ -221,23 +228,50 @@ main {
 
 /* FOOTER */
 
-#footer {
+footer {
     background-color: #F2F2F2;
+    width: 100%;
+}
+
+.footer-colonne {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
-.footer-bloc {
-    margin: 20px 30px;
+.footer-colonne-largeur {
+    width: 30%;
+    padding: 2rem 2rem;
 }
 
-.footer-bloc:nth-child(1) {
-    flex: 1;
+.footer-liens {
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: black;
 }
-.footer-bloc:nth-child(2) {
-    flex: 1;
+
+.footer-liens:hover {
+    text-decoration: none;
 }
-.footer-bloc:nth-child(3) {
-    flex: 1;
-}
+
+@media (max-width: 750px) {
+    .footer-colonne {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    .footer-colonne-largeur {
+      width: 100%;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .footer-colonne-largeur:first-child {
+      margin-top: 0;
+    }
+    .footer-colonne-largeur:last-child {
+      margin-bottom: 0;
+    }
+  }

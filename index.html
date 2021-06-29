@@ -58,7 +58,6 @@
             </div>
 
             <!-- essais de bouton recherche avec Flexbox
-            voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
             <p>(ci-dessous : essai en cours avec Flex)</p>
             <form>
                 <div id="container-search-flex">
@@ -96,13 +95,13 @@
                 </div>
             </div>
 
-            <p>
+            <div id="avertissement">
                 <span class="fa-stack">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-info fa-stack-1x"></i>
                 </span>
                 &nbsp;Plus de 500 logements sont disponibles dans cette ville
-            </p>
+            </div>
 
         </div><!-- fin search-and-filter -->
 
@@ -159,21 +158,23 @@
         </section>
 
         <footer id="footer">
-            <div class="footer-bloc">
-                <h3>A propos</h3>
-                    <p>Fonctionnement du site</p>
-                    <p>Conditions générales de ventes</p>
-                    <p>Données et confidentialité</p>
-            </div>
-            <div class="footer-bloc">
-                <h3>Nos hébergements</h3>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
-            </div>
-            <div class="footer-bloc">
-                <h3>Assistance</h3>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+            <div class="footer-colonne">
+                <div class="footer-colonne-largeur">
+                    <h3>A propos</h3>
+                    <a href="#" class="footer-liens">Fonctionnement du site</a>
+                    <a href="#" class="footer-liens">Conditions générales de vente</a>
+                    <a href="#" class="footer-liens">Données et confidentialités</a>
+                </div>
+                <div class="footer-colonne-largeur">
+                    <h3>Nos hébergement</h3>
+                    <a href="#" class="footer-liens">Charte qualité</a>
+                    <a href="#" class="footer-liens">Soumettre votre hotel</a>
+                </div>
+                <div class="footer-colonne-largeur">
+                    <h3>Assistance</h3>
+                    <a href="#" class="footer-liens">Centre d'aide</a>
+                    <a href="#" class="footer-liens">Nous contacter</a>
+                </div>
             </div>
         </footer>
     </body>
