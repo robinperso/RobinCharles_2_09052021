@@ -139,13 +139,17 @@ la version d'icône awesome cerclée (grisée) et "light" est réservé aux comp
     border: 2px solid #d9d9d9;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    cursor: pointer;
-    transition-duration: 0.1s;
+    cursor: pointer; /* faire apparaitre la main */
     font-weight: bold;
 }
 
+.bouton-filtre:hover {
+    background-color: #0065ff;
+    color: white;
+}
+
 .bouton-filtre-icone {
-    background-color: #DEEBFF;
+    background-color: #deebff;
     border-radius: 100%;
     height: 3rem;
     width: 3rem;
@@ -155,6 +159,7 @@ la version d'icône awesome cerclée (grisée) et "light" est réservé aux comp
     align-items: center;
     justify-content: center;
     margin: -2px;
+    color: blue;
 }
 
 .bouton-filtre-texte {
