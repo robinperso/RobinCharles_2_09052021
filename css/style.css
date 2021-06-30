@@ -76,6 +76,7 @@ utilité de ce code ? :
 #recherche {
     margin-top: 30px;
     margin-bottom: 30px;
+    display:inline;
 }
 
 #recherche-icone {
