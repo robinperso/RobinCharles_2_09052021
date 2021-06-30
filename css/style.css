@@ -20,8 +20,10 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 - les éléments titres sont en thin regular...
 - il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille sur la démo ?
 - les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
+*/
 
-
+/* conventions de nommage à appliquer : BEM ou OOCSS 
+*/
 
 /* le sélecteur * plus efficace que body, mais mauvaise pratique ?
 https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
@@ -45,7 +47,7 @@ header {
 /* CONTENU */
 
 #contenu {
-    max-width: 1400px; 
+    max-width: 1350px; 
         /* 1440px : largeur de l'image de la capture écran du projet
         par contre, il y a une marge à gauche / droite semble-t-il...
         voir la largeur du footer aussi... */
@@ -197,6 +199,13 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* HEBERGEMENTS ET POPULAIRES */
 
+/* faire apparaitre un lien sur un div : propriété display: block;
+voir cours vidéos tips
+https://www.youtube.com/watch?v=0GpADNMMDqU
+
+animer les vignettes :
+https://www.youtube.com/watch?v=U6uM5XjJXH0
+*/
 
 #hebergements-et-populaires {
     display: flex;
@@ -295,7 +304,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
         width: 100%;
     }
 
-    #hebergement-marseille article {
+    #hebergements-marseille .box-hebergements {
         width: 94%;
         margin: 4px auto;
     }
