@@ -31,133 +31,165 @@
     </head>
 
     <body>
-        <header id="top">
-            <a href="/">
-                <!-- on utilise l'icône SVG en priorité ... -->
-                <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
-            </a>
-            <nav>
-                <a href="#hebergement">Hébergements</a>
-                <a href="#populaire">Activités</a>
-            </nav>
-                <a href="#">S'inscrire</a>
-        </header><!-- fin header -->
-
-        <div id="recherche-et-filtres">
+        <div id="contenu">
             <header>
-                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
-            </header>
+                <a href="/">
+                <!-- on utilise l'icône SVG en priorité ... -->
+                    <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
+                </a>
+                <nav>
+                    <a href="#hebergements-et-populaires">Hébergements</a>
+                    <a href="#activites">Activités</a>
+                    <a href="#">S'inscrire</a>
+                </nav>
+            </header><!-- fin header -->
+
+            <section id="recherche-et-filtres">
+                <div id="titre">
+                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
             
-            <div id="recherche">
-                <form action="/" style="display:inline;" method="get">
-                    <span id="recherche-icone">
+                <div id="recherche">
+                    <form action="/" style="display:inline;" method="get">
+                        <span id="recherche-icone">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <!-- JavaScript : value disparait au clic -->
+                        <input type="text" id="recherche-texte" value="Marseille, France" onfocus="if(this.value=='Marseille, France'){this.value=''}" onblur="if(this.value==''){this.value='Marseille, France'}">
+                        <input type="submit" id="recherche-bouton" value="Rechercher">
+                    </form>
+                </div>
+
+                <!-- essais de bouton recherche avec Flexbox
+                <form>
+                    <div id="container-search-flex">
                         <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="search-text-flex" value="Marseille, France">
+                        <input type="submit" id="search-button-flex" value="Rechercher">
+                    </div>
+                </form -->
+
+                <div id="filtres">
+                    <h2 class="titre-filtres">Filtres</h2>
+                    <div class="bouton-filtre">
+                        <div class="bouton-filtre-icone">
+                            <i class="fas fa-money-bill-wave bouton-filtre-icone"></i>
+                        </div>
+                        <span class="bouton-filtre-texte">Économique</span>
+                    </div>
+                    <div class="bouton-filtre">
+                        <div class="bouton-filtre-icone">
+                            <i class="fas fa-child bouton-filtre-icone"></i>
+                        </div>
+                        <span class="bouton-filtre-texte">Familial</span>
+                    </div>
+                    <div class="bouton-filtre">
+                        <div class="bouton-filtre-icone">
+                            <i class="fas fa-heart bouton-filtre-icone"></i>
+                        </div>
+                        <span class="bouton-filtre-texte">Romantique</span>
+                    </div>
+                    <div class="bouton-filtre">
+                        <div class="bouton-filtre-icone">
+                            <i class="fas fa-dog bouton-filtre-icone"></i>
+                        </div>
+                        <span class="bouton-filtre-texte">Animaux autorisés</span>
+                    </div>
+                </div>
+
+                <div id="avertissement">
+                    <span class="fa-stack">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-info fa-stack-1x"></i>
                     </span>
-                    <input type="text" id="recherche-texte" value="Marseille, France">
-                    <input type="submit" id="recherche-bouton" value="Rechercher">
-                </form>
-            </div>
-
-            <!-- essais de bouton recherche avec Flexbox
-            <form>
-                <div id="container-search-flex">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" id="search-text-flex" value="Marseille, France">
-                    <input type="submit" id="search-button-flex" value="Rechercher">
+                    &nbsp;Plus de 500 logements sont disponibles dans cette ville
                 </div>
-            </form -->
+            </section><!-- fin recherche-et-filtres -->
 
-            <div class="filtres">
-                <h2 class="titre-filtres">Filtres</h2>
-                <div class="bouton-filtre">
-                    <div class="bouton-filtre-icone">
-                        <i class="fas fa-money-bill-wave bouton-filtre-icone"></i>
-                    </div>
-                    <span class="bouton-filtre-texte">Économique</span>
-                </div>
-                <div class="bouton-filtre">
-                    <div class="bouton-filtre-icone">
-                        <i class="fas fa-child bouton-filtre-icone"></i>
-                    </div>
-                    <span class="bouton-filtre-texte">Familial</span>
-                </div>
-                <div class="bouton-filtre">
-                    <div class="bouton-filtre-icone">
-                        <i class="fas fa-heart bouton-filtre-icone"></i>
-                    </div>
-                    <span class="bouton-filtre-texte">Romantique</span>
-                </div>
-                <div class="bouton-filtre">
-                    <div class="bouton-filtre-icone">
-                        <i class="fas fa-dog bouton-filtre-icone"></i>
-                    </div>
-                    <span class="bouton-filtre-texte">Animaux autorisés</span>
-                </div>
-            </div>
+            <main>
 
-            <div id="avertissement">
-                <span class="fa-stack">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-info fa-stack-1x"></i>
-                </span>
-                &nbsp;Plus de 500 logements sont disponibles dans cette ville
-            </div>
+                <section id="hebergements-et-populaires">
 
-        </div><!-- fin recherche-et-filtres -->
+                    <div id="hebergements-marseille">
 
-        <main>
+                        <h2>Hébergements à Marseille</h2>
 
-            <section id="hebergement">
-                <h2>Hébergements à Marseille</h2>
-                    <div class="article-container">
-                        <article>
-                            <div class="img">
-                                <h3>Maison 1</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="img">
-                                <h3>Maison 1</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="img">
-                                <h3>Maison 1</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="img">
-                                <h3>Maison 1</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="img">
-                                <h3>Maison 1</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="img">
-                                <!-- background-img=url, background-position=center, background-size=cover-->
-                                <h3>Maisons 6</h3>
-                                <!-- étoiles -->
-                            </div>
-                        </article>
-                    </div>
-            </section>
+                            <div id="vignettes-hebergements">
 
-            <aside id="populaire">
-                <h2>Les plus populaires</h2>
-            </aside>
+                                <div class="box-hebergements">
+                                    <img class="photo-hebergements" src="img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge de la Cannebière" />
+                                    <h3>Maison 1</h3>
+                                </div>
+                                    
+                                <div class="box-hebergements">
+                                    <img class="photo-hebergements" src="img/hebergements/hotel-du-port.jpg" alt="Hôtel du Port" />
+                                    <h3>Maison 2</h3>
+                                </div>
 
-        </main><!-- fin hebergement et populaire -->
+                                <div class="box-hebergements">
+                                    <img class="photo-hebergements" src="img/hebergements/hotel-les-mouettes.jpg" alt="Hôtel Les Mouettes" />
+                                    <h3>Maison 3</h3>
+                                </div>
 
-        <section id="activites">
-            <h2>Activités à Marseille</h2>
+                                <div class="box-hebergements">
+                                    <img class="photo-hebergements" src="img/hebergements/hotel-de-la-mer.jpg" alt="Hôtel de la Mer" />
+                                    <h3>Maison 4</h3>
+                                </div>
 
+                                <div class="box-hebergements">
+                                    <img class="photo-hebergements" src="img/hebergements/auberge-le-panier.jpg" alt="Auberge Le Panier" />
+                                    <h3>Maison 5</h3>
+                                </div>
 
-        </section>
+                                <div class="box-hebergements">
+                                    <img class="photo-hebergements" src="img/hebergements/hotel-chez-amina.jpg" alt="Hôtel Chez Amina" />
+                                    <h3>Maison 6</h3>
+                                </div>
+                            
+                            <div id="hebergements-afficher-plus">
+                                <h3>Afficher plus</h3>
+                            </div>        
+                        </div>
 
+                    </div><!-- fin hébergement à Marseille -->
+
+                    <aside id="populaires">
+
+                        <h2>Les plus populaires</h2>
+
+                            <div id="vignettes-populaires">
+
+                                <div class="box-populaires">
+                                    <img class="photo-populaires" src="img/populaires/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
+                                    <h3>Maison 1</h3>
+                                </div>
+
+                                <div class="box-populaires">
+                                    <img class="photo-populaires" src="img/populaires/chambre-d-hotes-au-coeur-de-l-eau.jpg" alt="Chambre d'hôtes Au coeur de l'eau" />
+                                    <h3>Maison 2</h3>
+                                </div>
+
+                                <div class="box-populaires">
+                                    <img class="photo-populaires" src="img/populaires/hotel-tout-bleu-et-blanc.jpg" alt="Hôtel Tout bleu et blanc" />
+                                    <h3>Maison 3</h3>
+                                </div>
+
+                        </div>
+                    </aside><!-- fin les plus populaires -->
+                
+                </section><!-- fin hebergement et populaires -->
+
+                <section id="activites">
+
+                    <h2>Activités à Marseille</h2>
+
+                </section><!-- fin activités -->
+           
+            </main><!-- fin vignettes -->
+
+        </div><!-- fin contenu -->
+        
         <footer id="footer">
             <div class="footer-colonne">
                 <div class="footer-colonne-largeur">

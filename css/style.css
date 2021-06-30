@@ -1,35 +1,63 @@
 /*
- Description:  Feuille de style du projet 2 OpenClassrooms
+ Description:  projet 2 OpenClassrooms - cursus Développeur web
  Author:       Robin Charles
- Version:      0.2
+ Version:      0.3
+*/
+
+/* couleurs par défaut :
+bleu #0065fc
+bleu plus claire #deebff
+gris pour le fond #f2f2f2
+*/
+
+/* étudier les dimensions : 
+en rem, en em (héritage), en wx ou en px ? 
+https://www.google.fr/search?q=rem+ou+pixel
+https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
 
 /* notes pour la police :
-- les éléments titres sont en thin regular, il faut se passer de ce thin...
-- il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille...
-- les boutons n'héritent pas automatiquement de la police, c'est la police système qui est utilisée par défaut...
+- les éléments titres sont en thin regular...
+- il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille sur la démo ?
+- les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
+
+
+
+/* le sélecteur * plus efficace que body, mais mauvaise pratique ?
+https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
+https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
 */
-
-/* note pour les padding : 
-en rem ou en px ? 
-*/
-
-* {
-    font-family: "Raleway", "Sans serif";
-}
-
-/* TOP */
-
-
-/* NAV */
-
-#top {
-    display:flex;
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
 }
 
 /* HEADER */
 
-header h1 {
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+/* CONTENU */
+
+#contenu {
+    max-width: 1400px; 
+        /* 1440px : largeur de l'image de la capture écran du projet
+        par contre, il y a une marge à gauche / droite semble-t-il...
+        voir la largeur du footer aussi... */
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* TITRE */
+
+#titre h1 {
     margin-bottom: -10px;
 }
 
@@ -65,20 +93,18 @@ utilité de ce code ? :
     border-left: none;
     border-right: none;
     width:160px;
-    /*font-size: 0.8em;*/
     font-weight: bold;
 }
 
 #recherche-bouton {
     background:#0065ff;
     color:white;
-    font-family: "Raleway";
+    font-family: "Raleway"; /* si on utilise body, on "fixe" la police */
     padding:15px 20px;
     border-radius:0 10px 10px 0;
     border:0 none;
-    /*font-size: 0.8em;*/
-    font-weight:bold;
-    margin-left:-4px;
+    font-weight: bold;
+    margin-left: -4px;
 }
 
 /* essai de bouton recherche en flex 
@@ -94,9 +120,10 @@ voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typic
 
 
 
-/* AVERTISSEMENT :
+/* AVERTISSEMENT 
 "plus de 500 logements..." 
-la version d'icône awesome cerclée (grisée) et "light" est réservé aux comptes Pro
+
+la version d'icône cerclée (grisée) et donc "light" est réservée aux comptes Awesome Pro 
 */
 
 #avertissement {
@@ -120,7 +147,7 @@ la version d'icône awesome cerclée (grisée) et "light" est réservé aux comp
 
 /* FILTRES */
 
-.filtres {
+#filtres {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -149,7 +176,7 @@ la version d'icône awesome cerclée (grisée) et "light" est réservé aux comp
 }
 
 .bouton-filtre-icone {
-    background-color: #deebff;
+    background-color: #deebff; /* bleu plus clair */
     border-radius: 100%;
     height: 3rem;
     width: 3rem;
@@ -159,7 +186,7 @@ la version d'icône awesome cerclée (grisée) et "light" est réservé aux comp
     align-items: center;
     justify-content: center;
     margin: -2px;
-    color: blue;
+    color: #0065ff;
 }
 
 .bouton-filtre-texte {
@@ -168,60 +195,107 @@ la version d'icône awesome cerclée (grisée) et "light" est réservé aux comp
 
 
 
-/* MAIN */
+/* HEBERGEMENTS ET POPULAIRES */
 
-main {
-    border: solid 1px yellow;
+
+#hebergements-et-populaires {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-#hebergement {
-    background-color: lightgray;
-    width:68%;
-    padding-bottom: 12px;
-}
-
-#populaire {
-    width: 28%;
-}
-
-.article-container {
-    width: 100%;
+#hebergements-marseille {
+    background-color: #F2F2F2;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 20px;
+    padding: 44px 36px 44px 36px;
+    max-width: 805px;
+}
+
+#vignettes-hebergements {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 60px;
 }
 
-.article-container article {
-    width: 30%;
-    min-width: 250px;
+.box-hebergements {
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px 5px 10px 5px;
     background-color: white;
-    border-radius: 10px;
-    margin: 4px auto;
+    max-width: 236px;
+    margin-bottom: 28px;
 }
 
-.article-container article div.img {
-    background-image: url("../img/activites/fort-de-pomegues.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.photo-hebergements {
+    object-fit: cover;
+    width: 236px;
+    height: 112px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
+#hebergements-afficher-plus {
+    font-weight: bold;
+}
+
+#populaires {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 45px 38px 31px 45px;
+    max-width: 345px;
+}
+
+#vignettes-populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box-populaires {
+    border: 3px solid white;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    padding: 6px 58px 6px 6px;
+    max-width: 284px;
+    max-height: 135px;
+    margin-bottom: 29px;
+}
+
+.photo-populaires {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
 
 @media only screen and (max-width: 1024px) {
-    #hebergement {
+    #hebergements-marseille {
         order: 2;
         width: 100%;
         /* padding ou padding-bottom ? */
     }
 
-    #populaire {
+    #populaires {
         order: 1;
         width: 100%;
     }
 
-    .article-container article {
+    #hebergement-marseille article {
         width: 94%;
         margin: 4px auto;
     }
