@@ -54,7 +54,7 @@
 
             <section id="recherche-et-filtres">
                 <div id="recherche">
-                    <form action="" method="get">
+                    <form action="/" method="get">
                         <span id="recherche-icone">
                             <i class="fas fa-map-marker-alt"></i>
                         </span>
@@ -114,7 +114,7 @@
 
                 <div id="hebergements-et-populaires"><!-- flex row pour la section et le aside -->
 
-                    <section id="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes -->
+                    <section id="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes hébergements à Marseille -->
 
                         <h2>Hébergements à Marseille</h2>
 
@@ -130,20 +130,12 @@
                                 </figure>
                                 <p style="margin: 0.25rem 0.75rem 0.25rem 0.75rem;">Nuit à partir de <strong>25 €</strong>
                                 </p>
-                                <div style="margin: 0 0.75rem 0.25rem 0.75rem">
-                                            <style>
-                                            .etoile[status-etoile="true"] {
-                                              color: #0065FC;
-                                            }
-                                            .etoile[status-etoile="false"] {
-                                              color: #f2f2f2;
-                                            }
-                                          </style>
-                                    <i class="fas fa-star etoile" status-etoile="true"></i>
-                                    <i class="fas fa-star etoile" status-etoile="true"></i>
-                                    <i class="fas fa-star etoile" status-etoile="true"></i>
-                                    <i class="fas fa-star etoile" status-etoile="true"></i>
-                                    <i class="fas fa-star etoile" status-etoile="false"></i>
+                                <div style="margin: 0 0.75rem 0.25rem 0.75rem">                                      
+                                    <i class="fas fa-star etoile" data-active="true"></i>
+                                    <i class="fas fa-star etoile" data-active="true"></i>
+                                    <i class="fas fa-star etoile" data-active="true"></i>
+                                    <i class="fas fa-star etoile" data-active="true"></i>
+                                    <i class="fas fa-star etoile" data-active="false"></i>
                                 </div>
                             </article>
                                     
@@ -180,7 +172,7 @@
                         
                     </section><!-- fin section hebergements-marseille -->
 
-                    <aside id="populaires"><!-- flex column pour le titre et les vignettes -->
+                    <aside id="populaires"><!-- flex column pour le titre et les vignettes populaires -->
 
                         <h2>Les plus populaires</h2>
 
