@@ -18,7 +18,8 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 
 /* notes pour la police :
 - les éléments titres sont en thin regular... 
-    du coup, le h3 des articles est trop long
+    et du coup, le h3 des articles est trop long
+    les titres sont plus "rammassés" sur le screenshot
 - il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille sur la démo ?
 - les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
 */
@@ -47,7 +48,7 @@ body {
 
 
 /* CONTENU 
-div de tout sauf le footer
+ toute la page sauf le footer
 */
 
 #contenu {
@@ -241,7 +242,7 @@ il y a aussi du box-shadow à faire...
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 15px 36px 0px 36px; /* il faut "remonter" les bretelles : trop d'espace gris en bas */ 
+    padding: 15px 36px 0px 36px; /* "remonter" les bretelles : trop d'espace gris en bas */ 
     max-width: 805px;
 }
 
