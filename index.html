@@ -109,18 +109,39 @@
 
             <main>
 
-                <section id="hebergements-et-populaires">
+                <section id="hebergements-et-populaires"><!-- flex row pour les deux sections -->
 
-                    <div id="hebergements-marseille">
+                    <div id="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes -->
 
                         <h2>Hébergements à Marseille</h2>
 
                         <div id="vignettes-hebergements">
 
-                            <div class="box-hebergements">
-                                <img class="photo-hebergements" src="img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge de la Cannebière" />
-                                <h3>Maison 1</h3>
-                            </div>
+                            <article class="box-hebergements"><!-- devrait être article -->
+                                <figure style="margin: 0;"><!-- puis faire suivre de figure -->
+                                        <img class="photo-hebergements" src="img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge de la Cannebière" />
+                                        <figcaption>
+                                            <!-- h3 trop long -->
+                                            <h4 style="margin: 0.25rem 0.75rem 0 0.75rem;">Auberge de la Cannebière</h3>
+                                        </figcaption>
+                                </figure>
+                                <p style="margin: 0.25rem 0.75rem 0.25rem 0.75rem;">Nuit à partir de <strong>25 €</strong></p>
+                                    <div style="margin: 0 0.75rem 0.25rem 0.75rem">
+                                        <style>
+                                            .etoile[status-etoile="true"] {
+                                              color: #0065FC;
+                                            }
+                                            .etoile[status-etoile="false"] {
+                                              color: #d9d9d9;
+                                            }
+                                          </style>
+                                        <i class="fas fa-star etoile" status-etoile="true"></i>
+                                        <i class="fas fa-star etoile" status-etoile="true"></i>
+                                        <i class="fas fa-star etoile" status-etoile="true"></i>
+                                        <i class="fas fa-star etoile" status-etoile="true"></i>
+                                        <i class="fas fa-star etoile" status-etoile="false"></i>
+                                    </div>
+                            </article>
                                     
                             <div class="box-hebergements">
                                 <img class="photo-hebergements" src="img/hebergements/hotel-du-port.jpg" alt="Hôtel du Port" />
@@ -183,7 +204,7 @@
                 </section><!-- fin section hebergement et populaires -->
 
 
-                <section id="activites-a-marseille"><!-- flex column pour l'ensemble-->
+                <section id="activites-a-marseille"><!-- flex column pour toute la section -->
 
                     <h2>Activités à Marseille</h2>
 
@@ -198,7 +219,7 @@
                             </div>
                         </div>
                         
-                        <div class="activites-2-et-3"><!-- flex column -->
+                        <div class="activites-2-et-3"><!-- flex column des vignettes empilées -->
 
                             <div class="box-activites">
                                 <div class="photo-activites">
@@ -228,7 +249,7 @@
                             </div>
                         </div>
 
-                        <div class="activites-5-et-6"><!-- flex column -->
+                        <div class="activites-5-et-6"><!-- flex column des vignettes empilées -->
 
                             <div class="box-activites">
                                 <div class="photo-activites">

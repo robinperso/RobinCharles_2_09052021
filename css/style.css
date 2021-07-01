@@ -17,13 +17,24 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
 
 /* notes pour la police :
-- les éléments titres sont en thin regular... font-size: large; ?
+- les éléments titres sont en thin regular... 
+    du coup, le h3 des articles est trop long
 - il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille sur la démo ?
 - les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
 */
 
-/* conventions de nommage à appliquer, BEM ou OOCSS : quesaco ?
+/* Accessibilité : quand et pourquoi utiliser les attributs aria pour les lecteurs d'écran
+https://www.lalutineduweb.fr/alternatives-textuelles-attributs-aria/
+notamment pour cacher les icones des balises <i>
+https://paris.wordcamp.org/2019/files/2019/04/ARIA_pour_l_accessibilite_quand_et_comment_l_utiliser.pdf
 */
+
+
+/* conventions de nommage à appliquer, BEM ou OOCSS : quesaco ?
+https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
+*/
+
+
 
 /* le sélecteur * plus efficace que body, mais mauvaise pratique ?
 https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
@@ -230,7 +241,7 @@ il y a aussi du box-shadow à faire...
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 15px 36px 44px 36px;
+    padding: 15px 36px 0px 36px; /* il faut "remonter" les bretelles : trop d'espace gris en bas */ 
     max-width: 805px;
 }
 
@@ -269,7 +280,7 @@ il y a aussi du box-shadow à faire...
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 15px 38px 31px 45px;
+    padding: 15px 36px 0px 36px;
     max-width: 345px;
 }
 
@@ -321,14 +332,12 @@ il y a aussi du box-shadow à faire...
 
 /* ACTIVITÉS */
 
-/* il faut "remonter" les bretelles des vignettes en bas : trop de gris */ 
-
 #activites-a-marseille {
     background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     max-width: 1350px;
 }
 
@@ -341,9 +350,9 @@ il y a aussi du box-shadow à faire...
 
 .box-activites {
     box-shadow: 0 0 20px #0000002e;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
     border-radius: 20px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 45px 0px;
 }
 
 .photo-activites {
@@ -366,7 +375,7 @@ il y a aussi du box-shadow à faire...
 
 .photo-activites-1, .photo-activites-4 {
     width: 301px;
-    height: 390px;
+    height: 410px;
 }
 
 .activites-2-et-3, .activites-5-et-6 {
@@ -381,7 +390,7 @@ il y a aussi du box-shadow à faire...
 
 .photo-activites-3 {
     width: 304px;
-    height: 112px;
+    height: 122px;
 }
 
 .photo-activites-5 {
