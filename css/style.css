@@ -17,12 +17,12 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
 
 /* notes pour la police :
-- les éléments titres sont en thin regular...
+- les éléments titres sont en thin regular... font-size: large; ?
 - il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille sur la démo ?
 - les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
 */
 
-/* conventions de nommage à appliquer : BEM ou OOCSS 
+/* conventions de nommage à appliquer, BEM ou OOCSS : quesaco ?
 */
 
 /* le sélecteur * plus efficace que body, mais mauvaise pratique ?
@@ -34,17 +34,10 @@ body {
     margin: 0px;
 }
 
-/* HEADER */
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px;
-}
-
-/* CONTENU */
+/* CONTENU 
+div de tout sauf le footer
+*/
 
 #contenu {
     max-width: 1350px; 
@@ -55,6 +48,17 @@ header {
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
 }
 
 /* TITRE */
@@ -204,8 +208,11 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 voir cours vidéos tips
 https://www.youtube.com/watch?v=0GpADNMMDqU
 
-animer les vignettes :
+animer les vignettes quand on clique :
 https://www.youtube.com/watch?v=U6uM5XjJXH0
+
+il y a aussi du box-shadow à faire...
+
 */
 
 #hebergements-et-populaires {
@@ -223,7 +230,7 @@ https://www.youtube.com/watch?v=U6uM5XjJXH0
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 44px 36px 44px 36px;
+    padding: 15px 36px 44px 36px;
     max-width: 805px;
 }
 
@@ -233,7 +240,7 @@ https://www.youtube.com/watch?v=U6uM5XjJXH0
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .box-hebergements {
@@ -262,7 +269,7 @@ https://www.youtube.com/watch?v=U6uM5XjJXH0
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 45px 38px 31px 45px;
+    padding: 15px 38px 31px 45px;
     max-width: 345px;
 }
 
@@ -273,7 +280,6 @@ https://www.youtube.com/watch?v=U6uM5XjJXH0
 }
 
 .box-populaires {
-    border: 3px solid white;
     border-radius: 20px;
     display: flex;
     background-color: white;
@@ -311,8 +317,82 @@ https://www.youtube.com/watch?v=U6uM5XjJXH0
     }
 }
 
+
+
 /* ACTIVITÉS */
 
+/* il faut "remonter" les bretelles des vignettes en bas : trop de gris */ 
+
+#activites-a-marseille {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1350px;
+}
+
+#vignettes-activites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-activites {
+    box-shadow: 0 0 20px #0000002e;
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    margin: 0px 0px 30px 0px;
+}
+
+.photo-activites {
+    /* est-ce bien nécessaire ?
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    padding: 0px 0px 0px 0px; /* 0 0 22px 0 */
+}
+
+.sous-titre-activites {
+    padding-left: 15px;
+}
+
+.photo-activites-1, .photo-activites-2, .photo-activites-3, .photo-activites-4, .photo-activites-5, .photo-activites-6 {
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.photo-activites-1, .photo-activites-4 {
+    width: 301px;
+    height: 390px;
+}
+
+.activites-2-et-3, .activites-5-et-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-activites-2 {
+    width: 304px;
+    height: 183px;
+}
+
+.photo-activites-3 {
+    width: 304px;
+    height: 112px;
+}
+
+.photo-activites-5 {
+    width: 304px;
+    height: 141px;
+}
+
+.photo-activites-6 {
+    width: 304px;
+    height: 165px;
+}
 
 
 /* FOOTER */
