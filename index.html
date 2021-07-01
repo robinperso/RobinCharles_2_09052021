@@ -33,23 +33,26 @@
     <body>
         <div id="contenu">
             <header>
-                <a href="https://robinperso.github.io/RobinCharles_2_09052021/">
-                <!-- on utilise l'icône SVG en priorité ... -->
-                    <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
-                </a>
-                <nav>
-                    <a href="#hebergements-et-populaires">Hébergements</a>
-                    <a href="#activites">Activités</a>
-                    <a href="#">S'inscrire</a>
-                </nav>
-            </header><!-- fin header -->
+                <div id="header">
+                    <a href="https://robinperso.github.io/RobinCharles_2_09052021/">
+                    <!-- on utilise l'icône SVG en priorité ... -->
+                        <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
+                    </a>
+                    <nav>
+                        <a href="#hebergements-et-populaires">Hébergements</a>
+                        <a href="#activites">Activités</a>
+                        <a href="#">S'inscrire</a>
+                    </nav>
+                </div>
 
-            <section id="recherche-et-filtres">
-                <div id="titre">
+                <div id="slogan">
                     <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-            
+
+            </header><!-- fin header -->
+
+            <section id="recherche-et-filtres">
                 <div id="recherche">
                     <form action="" method="get">
                         <span id="recherche-icone">
@@ -109,38 +112,39 @@
 
             <main>
 
-                <section id="hebergements-et-populaires"><!-- flex row pour les deux sections -->
+                <div id="hebergements-et-populaires"><!-- flex row pour la section et le aside -->
 
-                    <div id="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes -->
+                    <section id="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes -->
 
                         <h2>Hébergements à Marseille</h2>
 
-                        <div id="vignettes-hebergements">
+                        <div id="vignettes-hebergements"><!-- flex row pour les vignettes -->
 
                             <article class="box-hebergements"><!-- devrait être article -->
                                 <figure style="margin: 0;"><!-- puis faire suivre de figure -->
-                                        <img class="photo-hebergements" src="img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge de la Cannebière" />
-                                        <figcaption>
-                                            <!-- h3 trop long -->
-                                            <h4 style="margin: 0.25rem 0.75rem 0 0.75rem;">Auberge de la Cannebière</h3>
-                                        </figcaption>
+                                    <img class="photo-hebergements" src="img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge de la Cannebière" />
+                                    <figcaption>
+                                        <!-- h3 pas assez gras -->
+                                        <h3 style="margin: 0.25rem 0.75rem 0 0.75rem;">Auberge de la Cannebière</h3>
+                                    </figcaption>
                                 </figure>
-                                <p style="margin: 0.25rem 0.75rem 0.25rem 0.75rem;">Nuit à partir de <strong>25 €</strong></p>
-                                    <div style="margin: 0 0.75rem 0.25rem 0.75rem">
-                                        <style>
+                                <p style="margin: 0.25rem 0.75rem 0.25rem 0.75rem;">Nuit à partir de <strong>25 €</strong>
+                                </p>
+                                <div style="margin: 0 0.75rem 0.25rem 0.75rem">
+                                            <style>
                                             .etoile[status-etoile="true"] {
                                               color: #0065FC;
                                             }
                                             .etoile[status-etoile="false"] {
-                                              color: #d9d9d9;
+                                              color: #f2f2f2;
                                             }
                                           </style>
-                                        <i class="fas fa-star etoile" status-etoile="true"></i>
-                                        <i class="fas fa-star etoile" status-etoile="true"></i>
-                                        <i class="fas fa-star etoile" status-etoile="true"></i>
-                                        <i class="fas fa-star etoile" status-etoile="true"></i>
-                                        <i class="fas fa-star etoile" status-etoile="false"></i>
-                                    </div>
+                                    <i class="fas fa-star etoile" status-etoile="true"></i>
+                                    <i class="fas fa-star etoile" status-etoile="true"></i>
+                                    <i class="fas fa-star etoile" status-etoile="true"></i>
+                                    <i class="fas fa-star etoile" status-etoile="true"></i>
+                                    <i class="fas fa-star etoile" status-etoile="false"></i>
+                                </div>
                             </article>
                                     
                             <div class="box-hebergements">
@@ -174,15 +178,15 @@
 
                         </div><!-- fin vignettes-hebergements -->
                         
-                    </div><!-- fin hebergements-marseille -->
+                    </section><!-- fin section hebergements-marseille -->
 
-                    <aside id="populaires">
+                    <aside id="populaires"><!-- flex column pour le titre et les vignettes -->
 
                         <h2>Les plus populaires</h2>
 
-                        <div id="vignettes-populaires">
+                        <div id="vignettes-populaires"><!-- flex column + flex-start pour les vignettes -->
 
-                            <div class="box-populaires">
+                            <div class="box-populaires"><!-- flex -->
                                 <img class="photo-populaires" src="img/populaires/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
                                 <h3>Hôtel Le soleil du matin</h3>
                             </div>
@@ -201,7 +205,7 @@
 
                     </aside><!-- fin aside populaires -->
                 
-                </section><!-- fin section hebergement et populaires -->
+                </div><!-- fin hebergement et populaires -->
 
 
                 <section id="activites-a-marseille"><!-- flex column pour toute la section -->

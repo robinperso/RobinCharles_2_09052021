@@ -64,7 +64,7 @@ div de tout sauf le footer
 
 /* HEADER */
 
-header {
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,7 +74,7 @@ header {
 
 /* TITRE */
 
-#titre h1 {
+#slogan h1 {
     margin-bottom: -10px;
 }
 
@@ -215,7 +215,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* HEBERGEMENTS ET POPULAIRES */
 
-/* faire apparaitre un lien sur un div : propriété display: block;
+/* faire apparaitre un lien sur un div :
 voir cours vidéos tips
 https://www.youtube.com/watch?v=0GpADNMMDqU
 
@@ -356,11 +356,7 @@ il y a aussi du box-shadow à faire...
 }
 
 .photo-activites {
-    /* est-ce bien nécessaire ?
-    background-size: 100% 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;*/
-    padding: 0px 0px 0px 0px; /* 0 0 22px 0 */
+    padding: 0px 0px 0px 0px; 
 }
 
 .sous-titre-activites {
