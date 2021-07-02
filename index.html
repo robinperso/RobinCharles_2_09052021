@@ -23,8 +23,9 @@
 
         <!-- polices -->
         <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" /> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">  
         
         <!-- styles CSS -->
         <link href="css/style.css" rel="stylesheet" media="all" type="text/css" />
@@ -34,13 +35,13 @@
         <div id="contenu">
             <header>
                 <div id="header">
-                    <a href="https://robinperso.github.io/RobinCharles_2_09052021/">
+                    <a href="/">
                         <!-- on utilise l'icône SVG en priorité ... -->
                         <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
                     </a>
                     <nav>
                         <a href="#hebergements-et-populaires">Hébergements</a>
-                        <a href="#activites">Activités</a>
+                        <a href="#activites-a-marseille">Activités</a>
                         <a href="#">S'inscrire</a>
                     </nav>
                 </div>
@@ -120,6 +121,7 @@
 
                         <div id="vignettes-hebergements"><!-- flex row pour les vignettes -->
 
+                            <a href="#" style="text-decoration: none; color:black">
                             <article class="box-hebergements"><!-- article : border, border-radius, padding, margin-bottom -->
                                 <figure style="margin: 0;"><!-- faire suivre de figure -->
                                     <img class="photo-hebergements" src="img/hebergements/auberge-la-cannebiere.jpg" alt="Auberge de la Cannebière" />
@@ -138,6 +140,7 @@
                                     <i class="fas fa-star etoile" data-active="false"></i>
                                 </div>
                             </article>
+                            </a>
                                     
                             <div class="box-hebergements">
                                 <img class="photo-hebergements" src="img/hebergements/hotel-du-port.jpg" alt="Hôtel du Port" />

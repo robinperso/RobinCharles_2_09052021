@@ -11,7 +11,7 @@ gris pour le fond #f2f2f2
 */
 
 /* étudier les dimensions : 
-en rem, en em (héritage), en wx ou en px ? 
+en rem, en em (héritage), en vx (par rapport à la taille du viewport) ou en px ? 
 https://www.google.fr/search?q=rem+ou+pixel
 https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
@@ -37,6 +37,10 @@ https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-
 
 
 
+/* CONTENU, POLICES, TAILLES
+div id contenu : toute la page sauf le footer
+*/
+
 /* le sélecteur * plus efficace que body, mais mauvaise pratique ?
 https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
 https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
@@ -46,22 +50,20 @@ body {
     margin: 0px;
 }
 
-
-/* CONTENU 
- toute la page sauf le footer
-*/
-
 #contenu {
     max-width: 1350px; 
         /* 1440px : largeur de l'image de la capture écran du projet
-        par contre, il y a une marge à gauche / droite semble-t-il...
-        voir la largeur du footer aussi... */
+        voir la largeur du footer : avec les padding en rem... */
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
 }
 
+h1, h2, h3 {
+    /* la taille des titre H1 par défaut est toujours 700 en Regular Thin ... */
+    /* font-weight: 400 !important; => trop fin, et toujours en Thin... */
+}
 
 /* HEADER */
 
@@ -262,11 +264,6 @@ il y a aussi du box-shadow à faire...
     background-color: white;
     max-width: 236px;
     margin-bottom: 28px;
-}
-
-.box-hebergements {
-    cursor: pointer;
-    transform:inherit;
 }
 
 .photo-hebergements {
