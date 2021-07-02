@@ -5,13 +5,13 @@
 */
 
 /* couleurs par défaut :
-bleu #0065fc
-bleu plus claire #deebff
-gris pour le fond #f2f2f2
+    bleu #0065fc
+    bleu plus claire #deebff
+    gris pour le fond #f2f2f2
 */
 
 /* étudier les dimensions : 
-en rem, en em (héritage), en vx (par rapport à la taille du viewport) ou en px ? 
+en rem (1rem = 16px par défaut), en em (fonctionne par héritage), en vx (par rapport à la taille du viewport) ou en px ? 
 https://www.google.fr/search?q=rem+ou+pixel
 https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
@@ -24,25 +24,27 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 - les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
 */
 
-/* Accessibilité : quand et pourquoi utiliser les attributs aria pour les lecteurs d'écran
-https://www.lalutineduweb.fr/alternatives-textuelles-attributs-aria/
-notamment pour cacher les icones des balises <i>
-https://paris.wordcamp.org/2019/files/2019/04/ARIA_pour_l_accessibilite_quand_et_comment_l_utiliser.pdf
+/* Accessibilité : 
+- quand et pourquoi utiliser les attributs aria pour les lecteurs d'écran
+    https://www.lalutineduweb.fr/alternatives-textuelles-attributs-aria/
+- notamment pour cacher les icones des balises <i>
+    https://paris.wordcamp.org/2019/files/2019/04/ARIA_pour_l_accessibilite_quand_et_comment_l_utiliser.pdf
 */
 
 /* conventions de nommage à appliquer, BEM ou OOCSS : quesaco ?
-https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
+    https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
 */
 
 
 
 /* CONTENU, POLICES, TITRES
 
-div id contenu : toute la page sauf le footer
+div id contenu : 
+    toute la page sauf le footer
 
-le sélecteur * plus efficace que body, mais mauvaise pratique ?
-https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
-https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
+le sélecteur * plus efficace que body, mais mauvaise pratique :
+    https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
+    https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
 */
 body {
     font-family: "Raleway", sans-serif;
@@ -333,7 +335,7 @@ il y a aussi du box-shadow à faire...
 }
 
 /* data-value
-voiur https://css-tricks.com/almanac/selectors/a/attribute/
+voir https://css-tricks.com/almanac/selectors/a/attribute/
 */
 
 .etoile[data-value="true"] {
