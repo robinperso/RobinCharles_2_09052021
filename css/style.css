@@ -61,7 +61,7 @@ body {
 }
 
 h1, h2, h3 {
-    /* la taille des titre H1 par défaut est toujours 700 en Regular Thin ... */
+    /* la taille des titre h1 par défaut est toujours 700 en Regular Thin ... */
     /* font-weight: 500 ou 400 !important; => trop fin, et toujours en Thin... */
 }
 
@@ -215,7 +215,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 
 
-/* HEBERGEMENTS ET POPULAIRES */
+/* HEBERGEMENTS */
 
 /* faire apparaitre un lien sur un div :
 voir cours vidéos tips
@@ -256,6 +256,7 @@ il y a aussi du box-shadow à faire...
     margin-bottom: 30px;
 }
 
+/* modifier le nom : utilisé par les deux box hébergements et populaire */
 .box-hebergements {
     box-shadow: 0 0 20px #0000002e;
     border: 3px solid white;
@@ -295,10 +296,13 @@ il y a aussi du box-shadow à faire...
     font-weight: bold; /* marche pas... */
 }
 
-.box-hebergements-lien {
+.box-lien {
     text-decoration: none; 
-    color:black
+    color: inherit;
 }
+
+
+/* POPULAIRES */
 
 #populaires {
     background-color: #f2f2f2;
@@ -307,6 +311,12 @@ il y a aussi du box-shadow à faire...
     border-radius: 20px;
     padding: 15px 32px 0px 32px;
     max-width: 345px;
+}
+
+#populaires-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 #vignettes-populaires {
@@ -342,7 +352,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
   color: #0065FC;
 }
 .etoile[data-value="false"] {
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 
 
