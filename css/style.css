@@ -30,18 +30,17 @@ notamment pour cacher les icones des balises <i>
 https://paris.wordcamp.org/2019/files/2019/04/ARIA_pour_l_accessibilite_quand_et_comment_l_utiliser.pdf
 */
 
-
 /* conventions de nommage à appliquer, BEM ou OOCSS : quesaco ?
 https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
 */
 
 
 
-/* CONTENU, POLICES, TAILLES
-div id contenu : toute la page sauf le footer
-*/
+/* CONTENU, POLICES, TITRES
 
-/* le sélecteur * plus efficace que body, mais mauvaise pratique ?
+div id contenu : toute la page sauf le footer
+
+le sélecteur * plus efficace que body, mais mauvaise pratique ?
 https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
 https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
 */
@@ -51,9 +50,8 @@ body {
 }
 
 #contenu {
-    max-width: 1350px; 
-        /* 1440px : largeur de l'image de la capture écran du projet
-        voir la largeur du footer : avec les padding en rem... */
+    max-width: 1376px; 
+        /* 1440px : largeur de l'image de la capture écran du projet -2x2rem(-64px)*/
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -65,6 +63,11 @@ h1, h2, h3 {
     /* font-weight: 500 ou 400 !important; => trop fin, et toujours en Thin... */
 }
 
+#slogan h1 {
+    margin-bottom: -10px;
+}
+
+
 /* HEADER */
 
 #header {
@@ -73,12 +76,6 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px;
-}
-
-/* TITRE */
-
-#slogan h1 {
-    margin-bottom: -10px;
 }
 
 
@@ -258,12 +255,13 @@ il y a aussi du box-shadow à faire...
 }
 
 .box-hebergements {
+    box-shadow: 0 0 20px #0000002e;
     border: 3px solid white;
     border-radius: 20px;
     padding: 5px 5px 10px 5px;
     background-color: white;
     max-width: 236px;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .photo-hebergements {
@@ -274,8 +272,30 @@ il y a aussi du box-shadow à faire...
     border-top-right-radius: 10px;
 }
 
+.box-hebergements-figure {
+    margin: 0;
+}
+
+/* le h3 est pas assez gras et ramassé... */
+.box-hebergements-titre {
+    margin: 0.25rem 0.75rem 0 0.75rem;
+}
+
+.box-hebergements-details {
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.box-hebergements-etoiles {
+    margin: 0 0.75rem 0.25rem 0.75rem
+}
+
 #hebergements-afficher-plus {
-    font-weight: bold;
+    font-weight: bold; /* marche pas... */
+}
+
+.box-hebergements-lien {
+    text-decoration: none; 
+    color:black
 }
 
 #populaires {
@@ -283,7 +303,7 @@ il y a aussi du box-shadow à faire...
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 15px 36px 0px 36px;
+    padding: 15px 32px 0px 32px;
     max-width: 345px;
 }
 
@@ -294,13 +314,14 @@ il y a aussi du box-shadow à faire...
 }
 
 .box-populaires {
+    box-shadow: 0 0 20px #0000002e;
     border-radius: 20px;
     display: flex;
     background-color: white;
-    padding: 6px 58px 6px 6px;
-    max-width: 284px;
+    padding: 6px 64px 6px 6px; /* 6px 58px 6px 6px; */
+    max-width: 284px; /* 284px */
     max-height: 135px;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
 }
 
 .photo-populaires {
@@ -422,7 +443,7 @@ footer {
     max-width: 100%;
     width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 0rem;
     box-sizing: border-box;
 }
 
