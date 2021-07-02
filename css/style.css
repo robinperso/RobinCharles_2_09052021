@@ -62,7 +62,7 @@ body {
 
 h1, h2, h3 {
     /* la taille des titre H1 par défaut est toujours 700 en Regular Thin ... */
-    /* font-weight: 400 !important; => trop fin, et toujours en Thin... */
+    /* font-weight: 500 ou 400 !important; => trop fin, et toujours en Thin... */
 }
 
 /* HEADER */
