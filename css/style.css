@@ -218,7 +218,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* faire apparaitre un lien sur un div :
 voir cours vidéos tips
-https://www.youtube.com/watch?v=0GpADNMMDqU
+https://www.youtube.com/watch?v=U6uM5XjJXH0
 
 animer les vignettes quand on clique :
 https://www.youtube.com/watch?v=U6uM5XjJXH0
@@ -262,6 +262,11 @@ il y a aussi du box-shadow à faire...
     background-color: white;
     max-width: 236px;
     margin-bottom: 28px;
+}
+
+.box-hebergements {
+    cursor: pointer;
+    transform:inherit;
 }
 
 .photo-hebergements {
