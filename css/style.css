@@ -52,7 +52,7 @@ body {
 }
 
 #contenu {
-    max-width: 1376px; 
+    max-width: 1350px; 
         /* 1440px : largeur de l'image de la capture écran du projet -2x2rem(-64px)*/
     padding-right: 0px;
     padding-left: 0px;
@@ -62,7 +62,7 @@ body {
 
 h1, h2, h3 {
     /* la taille des titre h1 par défaut est toujours 700 en Regular Thin ... */
-    /* font-weight: 500 ou 400 !important; => trop fin, et toujours en Thin... */
+    /* 500 ou 400 !important; => trop fin, et toujours en Thin... */
 }
 
 #slogan h1 {
@@ -234,6 +234,7 @@ il y a aussi du box-shadow à faire...
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
+    max-width: 1350px;
 }
 
 #hebergements-marseille {
@@ -298,7 +299,7 @@ il y a aussi du box-shadow à faire...
 
 .box-lien {
     text-decoration: none; 
-    color: inherit;
+    color: black;
 }
 
 
@@ -311,6 +312,7 @@ il y a aussi du box-shadow à faire...
     border-radius: 20px;
     padding: 15px 32px 0px 32px;
     max-width: 345px;
+    flex-basis: 35%;
 }
 
 #populaires-titre {
@@ -326,14 +328,15 @@ il y a aussi du box-shadow à faire...
 }
 
 .box-populaires {
-    box-shadow: 0 0 20px #0000002e;
+    border: 3px solid white;
     border-radius: 20px;
     display: flex;
     background-color: white;
-    padding: 6px 64px 6px 6px; /* 6px 58px 6px 6px; */
-    max-width: 284px; /* 284px */
+    padding: 6px 40px 6px 6px; /* padding: 6px 58px 6px 6px; */
+    max-width: 284px;
     max-height: 135px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;;
+    cursor: pointer;
 }
 
 .photo-populaires {
@@ -344,10 +347,33 @@ il y a aussi du box-shadow à faire...
     border-bottom-left-radius: 10px;
 }
 
-/* data-value
+.box-populaires-contenu {
+    padding: 0px 0px 0px 0px; /* 7px 0px 7px 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.box-populaires-titre {
+    /*padding-bottom: 14px;*/
+    margin: 0;
+    padding: 0;
+}
+
+.box-populaires-prix {
+    padding-bottom: 30px; /* padding-bottom: 30px; */
+}
+
+.box-hebergements-etoiles {
+    margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+.box-populaires-espace {
+    flex: 1;
+}
+
+/* data-value pour les étoiles
 voir https://css-tricks.com/almanac/selectors/a/attribute/
 */
-
 .etoile[data-value="true"] {
   color: #0065FC;
 }
