@@ -11,7 +11,10 @@
 */
 
 /* étudier les dimensions : 
-en rem (1rem = 16px par défaut), en em (fonctionne par héritage), en vx (par rapport à la taille du viewport) ou en px ? 
+en rem (1rem = 16px par défaut), 
+en em (fonctionne par héritage), 
+en vw (par rapport à la taille du viewport) 
+ou en px (quand il faut un espace précis)
 https://www.google.fr/search?q=rem+ou+pixel
 https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
@@ -35,14 +38,14 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
     https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
 */
 
-
+/* animation sur les vignettes ? 
+transition: transform .2s;
+*/
 
 /* CONTENU, POLICES, TITRES
-
-div id contenu : 
+- div id contenu : 
     toute la page sauf le footer
-
-le sélecteur * plus efficace que body, mais mauvaise pratique :
+- le sélecteur * plus efficace que body, mais mauvaise pratique :
     https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
     https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
 */
@@ -116,8 +119,8 @@ utilité de ce code ? :
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
     border-right: none;
-    width:160px; /* pleine largeur ? */
-    font-weight: bold;
+    width:200px; /* pleine largeur ? */
+    font-size: 1.1em;
 }
 
 #recherche-bouton {
@@ -128,6 +131,7 @@ utilité de ce code ? :
     border-radius:0 10px 10px 0;
     border:0 none;
     font-weight: bold;
+    font-size: 1.1em;
     margin-left: -4px;
 }
 
