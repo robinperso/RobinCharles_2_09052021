@@ -352,7 +352,7 @@ il y a aussi du box-shadow à faire...
 
 .photo-populaires {
     width: 132px;
-    height: 132px;
+    /* height: 132px */;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
