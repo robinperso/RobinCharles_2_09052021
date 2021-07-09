@@ -401,8 +401,8 @@ il y a aussi du box-shadow à faire...
 }
 
 .photo-populaires {
-    width: 132px;
-    height: 132px;
+    width: 122px;
+    height: 122px; /* ça bug avec la dernière photo toute en hauteur... */
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
