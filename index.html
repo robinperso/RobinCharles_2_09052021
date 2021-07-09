@@ -23,9 +23,10 @@
 
         <!-- polices -->
         <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" /> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">  
         
         <!-- styles CSS -->
         <link href="css/style.css" rel="stylesheet" media="all" type="text/css" />
@@ -258,9 +259,10 @@
                         <div id="vignettes-populaires"><!-- flex column + flex-start pour les vignettes -->
         
                             <article class="box-populaires">
-                                <img class="photo-populaires" src="img/populaires/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
-                                <div class="box-populaires-contenu">
-                                    <h3 class="box-populaires-titre">Hôtel le soleil du matin</h3>
+                                <!-- balise lien ? manqu un div pour que la vignette ne soit pas "cassée" -->
+                                    <img class="photo-populaires" src="img/populaires/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
+                                    <div class="box-populaires-contenu">
+                                        <h3 class="box-populaires-titre">Hôtel le soleil du matin</h3>
                                     <p class="box-populaires-details">Nuit à partir de <strong>128€</strong></p>
                                     <div class="box-populaires-espace"></div>
                                     <div class="box-hebergements-etoiles">                                      
@@ -271,6 +273,7 @@
                                         <i class="fas fa-star etoile" data-value="true"></i>
                                     </div>
                                 </div>
+                                <!-- fin lien ? -->
                             </article>
 
                             <article class="box-populaires">

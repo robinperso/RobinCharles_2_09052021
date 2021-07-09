@@ -20,11 +20,7 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 */
 
 /* notes pour la police :
-- les éléments titres sont en thin regular... 
-    et du coup, le h3 des articles est trop long
-    les titres sont plus "rammassés" sur le screenshot
-- il semble que le titre h1, le champs de recherche et les boutons filtres aient la même taille sur la démo ?
-- les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
+- en body, les boutons de formulaire n'héritent pas automatiquement de la police, c'est la police système qui est par défaut...
 */
 
 /* Accessibilité : 
@@ -40,21 +36,74 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 
 /* à faire :
 animation sur les vignettes ? 
-
 "Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité"
 j'ai fait des cursor : pointer; pour populaire et activités : c'est pas terrible
 */
 
+/* RESET CSS de Eric Meyer
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+
+    nécessite de redéfinir les titres
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+
 /* CONTENU, POLICES, TITRES
 - div id contenu : 
     toute la page sauf le footer
-- le sélecteur * plus efficace que body, mais mauvaise pratique :
-    https://stackoverflow.com/questions/42925682/where-to-set-font-family-body-or-html-element
-    https://stackoverflow.com/questions/7187569/difference-in-applying-css-to-html-body-and-the-universal-selector
+- la police est en Thin, pas en Regular plus "compacte"
 */
+
 body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
+
 }
 
 #contenu {
@@ -67,8 +116,8 @@ body {
 }
 
 h1, h2, h3 {
-    /* la taille des titre h1 par défaut est toujours 700 en Regular Thin ... */
-    /* 500 ou 400 !important; => trop fin, et toujours en Thin... */
+    /* 500 ou 400 => trop fin, et toujours en Thin... */
+    font-weight: 500;
 }
 
 #slogan h1 {
@@ -256,7 +305,8 @@ il y a aussi du box-shadow à faire...
     align-content: space-between;
     border-radius: 20px;
     padding: 15px 36px 0px 36px; /* "remonter" les bretelles : trop d'espace gris en bas */ 
-    max-width: 805px;
+    max-width: 840px;
+    width: 62%;
 }
 
 #vignettes-hebergements {
@@ -323,7 +373,7 @@ il y a aussi du box-shadow à faire...
     border-radius: 20px;
     padding: 15px 32px 0px 32px;
     max-width: 345px;
-    flex-basis: 35%;
+    width: 32%;
 }
 
 #populaires-titre {
@@ -352,7 +402,7 @@ il y a aussi du box-shadow à faire...
 
 .photo-populaires {
     width: 132px;
-    /* height: 132px */;
+    height: 132px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
