@@ -320,7 +320,7 @@ il y a aussi du box-shadow à faire...
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 15px 32px 0px 32px;
+    padding: 15px 22px 15px 22px;
     max-width: 345px;
     width: 32%;
 }
@@ -350,8 +350,8 @@ il y a aussi du box-shadow à faire...
 }
 
 .photo-populaires {
-    width: 122px;
-    height: 122px; /* ça bug avec la dernière photo toute en hauteur... */
+    width: 125px;
+    height: 133px; /* ça bug avec la dernière photo toute en hauteur... */
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
