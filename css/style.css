@@ -353,18 +353,44 @@ il y a aussi du box-shadow à faire...
     text-decoration: none;
 }
 
+.img-popular {
+    flex: 1;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.img-popular-1 {
+    background-image: url('../img/populaires/hotel-le-soleil-du-matin.jpg')
+}
+
+.img-popular-2 {
+    background-image: url('../img/populaires/chambre-d-hotes-au-coeur-de-l-eau.jpg')
+}
+.img-popular-3 {
+    background-image: url('../img/populaires/hotel-tout-bleu-et-blanc.jpg')
+}
+
+.box-populaires-contenu {
+    width: 70%;
+    padding: 0; /* 7px 0px 7px 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.box-hebergements-etoiles {
+    margin-top: 30px;
+}
+
 .photo-populaires {
     width: 125px;
     height: 133px; /* ça bug avec la dernière photo toute en hauteur... */
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-}
-
-.box-populaires-contenu {
-    padding: 0px 0px 0px 0px; /* 7px 0px 7px 20px; */
-    display: flex;
-    flex-direction: column;
 }
 
 .box-populaires-titre {
