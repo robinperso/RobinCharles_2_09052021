@@ -37,7 +37,6 @@ avec body, les boutons de formulaire n'héritent pas de la police, c'est la poli
 /* à faire :
 animation sur les vignettes ? 
 "Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité"
-j'ai fait des cursor : pointer; pour populaire : c'est pas terrible
 */
 
 
@@ -304,7 +303,8 @@ il y a aussi du box-shadow à faire...
 }
 
 #hebergements-afficher-plus {
-    /*s'affiche à droite des vignettes en mode tablette... */
+    /* le texte s'affiche à droite des vignettes en mode tablette... */
+    clear: both;
 }
 
 .box-lien {
@@ -346,7 +346,6 @@ il y a aussi du box-shadow à faire...
     max-width: 284px;
     max-height: 135px;
     margin-bottom: 29px;;
-    cursor: pointer;
 }
 
 .photo-populaires {
@@ -410,7 +409,6 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
     padding: 0px 0px 0px 0px;
     border-radius: 20px;
     margin: 0px 0px 45px 0px;
-    cursor: pointer;
 }
 
 .photo-activites {
@@ -495,7 +493,8 @@ footer {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 1024px) {
+/* tablettes */
+@media screen and (min-width:768px) and (max-device-width: 1024px) {
     #hebergements-marseille {
         order: 2;
         width: 100%;
@@ -513,7 +512,12 @@ footer {
     }
 }
 
-@media (max-width: 750px) {
+/* Mobiles
+"Iphone 8" : 667px
+"Iphone 8 plus" : 736px
+"Iphone X" : 812px 
+*/
+@media only screen and (max-width: 768px) {
     .footer-colonne {
       flex-direction: column;
       padding: 2rem;
