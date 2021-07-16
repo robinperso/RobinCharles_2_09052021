@@ -10,10 +10,10 @@
     gris pour le fond #f2f2f2
 */
 
-/* étudier les dimensions : 
-en rem (1rem = 16px par défaut), 
-en em (fonctionne par héritage), 
-en vw (par rapport à la taille du viewport) 
+/* étudier les dimensions :
+en rem (1rem = 16px par défaut),
+en em (fonctionne par héritage),
+en vw (par rapport à la taille du viewport)
 ou en px (quand il faut un espace précis)
 https://www.google.fr/search?q=rem+ou+pixel
 https://grafikart.fr/tutoriels/font-size-rem-em-px-477
@@ -23,7 +23,7 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 avec body, les boutons de formulaire n'héritent pas de la police, c'est la police système par défaut...
 */
 
-/* Accessibilité : 
+/* Accessibilité :
 - quand et pourquoi utiliser les attributs aria pour les lecteurs d'écran
     https://www.lalutineduweb.fr/alternatives-textuelles-attributs-aria/
 - notamment pour cacher les icones des balises <i>
@@ -35,14 +35,14 @@ avec body, les boutons de formulaire n'héritent pas de la police, c'est la poli
 */
 
 /* à faire :
-animation sur les vignettes ? 
+animation sur les vignettes ?
 "Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité"
 */
 
 
 
 /* CONTENU, POLICES, TITRES
-- div id contenu : 
+- div id contenu :
     toute la page sauf le footer
 - la police est en Thin, pas en Regular plus "compacte"
 */
@@ -54,7 +54,7 @@ body {
 }
 
 #contenu {
-    max-width: 1350px; 
+    max-width: 1350px;
         /* 1440px : largeur de l'image de la capture écran du projet -2x2rem(-64px)*/
     padding-right: 0px;
     padding-left: 0px;
@@ -88,10 +88,10 @@ nav a {
     text-decoration: none;
 }
 
-/* RECHERCHE 
+/* RECHERCHE
 
 -moz-border-radius pose problème dans la console : propriété inconnue...
-utilité de ce code ? : 
+utilité de ce code ? :
     -moz-border-radius:10px 0 0 10px;
     -webkit-border-radius:10px 0 0 10px;
     -o-border-radius:10px 0 0 10px;
@@ -135,7 +135,7 @@ utilité de ce code ? :
     margin-left: -4px;
 }
 
-/* essai de bouton recherche en flex 
+/* essai de bouton recherche en flex
 voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
 */
 .container-search-flex {
@@ -148,10 +148,10 @@ voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typic
 
 
 
-/* AVERTISSEMENT 
-"plus de 500 logements..." 
+/* AVERTISSEMENT
+"plus de 500 logements..."
 
-la version d'icône cerclée (grisée) et donc "light" est réservée aux comptes Awesome Pro 
+la version d'icône cerclée (grisée) et donc "light" est réservée aux comptes Awesome Pro
 */
 
 #avertissement {
@@ -252,7 +252,7 @@ il y a aussi du box-shadow à faire...
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 15px 36px 0px 36px; /* "remonter" les bretelles : trop d'espace gris en bas */ 
+    padding: 15px 36px 0px 36px; /* "remonter" les bretelles : trop d'espace gris en bas */
     max-width: 840px;
     width: 62%;
 }
@@ -308,7 +308,7 @@ il y a aussi du box-shadow à faire...
 }
 
 .box-lien {
-    text-decoration: none; 
+    text-decoration: none;
     color: black;
 }
 
@@ -340,12 +340,17 @@ il y a aussi du box-shadow à faire...
 .box-populaires {
     border: 3px solid white;
     border-radius: 20px;
-    display: flex;
     background-color: white;
     padding: 6px 40px 6px 6px; /* padding: 6px 58px 6px 6px; */
     max-width: 284px;
     max-height: 135px;
     margin-bottom: 29px;;
+}
+
+.box-populaires a {
+    display: flex;
+    color: black;
+    text-decoration: none;
 }
 
 .photo-populaires {
@@ -412,7 +417,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
 }
 
 .photo-activites {
-    padding: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
 }
 
 .sous-titre-activites {
@@ -515,7 +520,7 @@ footer {
 /* Mobiles
 "Iphone 8" : 667px
 "Iphone 8 plus" : 736px
-"Iphone X" : 812px 
+"Iphone X" : 812px
 */
 @media only screen and (max-width: 768px) {
     .footer-colonne {
