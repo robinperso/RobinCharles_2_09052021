@@ -110,7 +110,7 @@ utilité de ce code ? :
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
     border-right: none;
-    width:200px; /* pleine largeur ? */
+    width:15vw;
     font-size: 1.1em;
 }
 
@@ -126,22 +126,10 @@ utilité de ce code ? :
     margin-left: -4px;
 }
 
-/* essai de bouton recherche en flex
-voir https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox#les_contr%C3%B4les_de_formulaire
-*/
-.container-search-flex {
-    display: flex;
-}
-
-.container-search-flex input[type="text"] {
-      flex: 1 1 auto;
-}
-
 
 
 /* AVERTISSEMENT
 "plus de 500 logements..."
-
 la version d'icône cerclée (grisée) et donc "light" est réservée aux comptes Awesome Pro
 */
 
@@ -151,7 +139,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 }
 
 .fa-stack {
-    font-size: 0.8em; /* mettre un peu plus fort ? */
+    font-size: 0.8em;
 }
 .fa-stack i {
     vertical-align: middle;
@@ -185,7 +173,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     border: 2px solid #d9d9d9;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    cursor: pointer; /* faire apparaitre la main */
+    cursor: pointer; 
     font-weight: bold;
 }
 
@@ -232,7 +220,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 15px 36px 0px 36px; /* "remonter" les bretelles : trop d'espace gris en bas */
+    padding: 15px 36px 0px 36px; 
     max-width: 60%;
     width: 60%;
 }
@@ -252,7 +240,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     border-radius: 20px;
     padding: 5px 5px 10px 5px;
     background-color: white;
-    max-width: 236px;
+    max-width: 30%;
     margin-bottom: 32px;
 }
 
@@ -319,7 +307,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     border: 3px solid white;
     border-radius: 20px;
     background-color: white;
-    padding: 6px 66px 6px 6px; /* padding: 6px 58px 6px 6px; */
+    padding: 6px 66px 6px 6px; 
     max-width: 80%;
     max-height: 135px;
     margin-bottom: 29px;;
@@ -332,7 +320,6 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 }
 
 .img-popular {
-    /*flex: 1;*/
     width: 50%;
     margin: 0;
     padding: 0;
@@ -354,7 +341,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 .box-populaires-contenu {
     width: 70%;
-    padding: 0; /* 7px 0px 7px 20px; */
+    padding: 0; 
     display: flex;
     flex-direction: column;
 }
@@ -373,7 +360,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 }
 
 .box-populaires-titre {
-    margin: 0.25rem 0 0 0.75rem; /* 0.25rem 0.75rem 0 0.75rem; */
+    margin: 0.25rem 0 0 0.75rem;
 }
 
 .box-populaires-details {
@@ -506,10 +493,23 @@ footer {
 /* tablettes */
 @media screen and (min-width:768px) and (max-device-width: 1024px) {
 
+    #recherche-texte {
+        width:30vw;
+    }
+
     #hebergements-marseille {
         order: 2;
         width: 100%;
-        /* padding ou padding-bottom ? */
+        /* fond devient blanc ? */
+    }
+
+    .box-hebergements {
+        max-width: 45%;
+    }
+    
+    #hebergements-marseille .vignettes-hebergements {
+        width: 94%;
+        
     }
 
     #populaires {
@@ -517,28 +517,72 @@ footer {
         width: 100%;
     }
 
-    #hebergements-marseille .box-hebergements {
-        width: 94%;
-        margin: 4px auto;
+    .img-popular {
+        width: 25%;
+    }
+
+    #activites-a-marseille {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    #vignettes-activites {
+        justify-content: space-around;
     }
 }
 
-/* Mobiles
+/* mobiles 
+
 "Iphone 8" : 667px
 "Iphone 8 plus" : 736px
 "Iphone X" : 812px
 */
 @media only screen and (max-width: 768px) {
 
+    #recherche-texte {
+        width:30vw;
+    }
+
     #hebergements-marseille {
         order: 2;
+        max-width: 100%;
         width: 100%;
-        /* padding ou padding-bottom ? */
+        background-color: white; /* le fond devient blanc ... */
+    }
+
+    .box-hebergements {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #hebergements-marseille .vignettes-hebergements {
+        width: 100%;
+    }
+
+    .photo-hebergements {
+        width: 100%;
     }
 
     #populaires {
         order: 1;
+        border-radius: 0;
+        max-width: 100%;
         width: 100%;
+    }
+
+    .img-popular {
+        width: 35%;
+    }
+
+
+    #activites-a-marseille {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    .photo-activites-1, .photo-activites-2, .photo-activites-3, .photo-activites-4, .photo-activites-5, .photo-activites-6 {
+    /* activités : les images ont la même hauteur... */
+        height: 120px;
     }
 
     .footer-colonne {
