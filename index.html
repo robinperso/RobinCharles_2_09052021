@@ -66,7 +66,10 @@
                         </span>
                         <!-- JavaScript : la valeur par défaut du champs de recherche disparait au clic -->
                         <input type="text" id="recherche-texte" value="Marseille, France" onfocus="if(this.value=='Marseille, France'){this.value=''}" onblur="if(this.value==''){this.value='Marseille, France'}">
-                        <input type="submit" id="recherche-bouton" value="Rechercher">
+                        <button type="submit" id="recherche-bouton">
+                            <p class="texte-bouton">Rechercher</p>
+                            <p class="texte-bouton-icone"><i class="fas fa-search"></i></p>  
+                        </button>          
                     </form>
                 </div>
 

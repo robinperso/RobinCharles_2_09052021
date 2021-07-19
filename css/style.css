@@ -108,21 +108,24 @@ utilité de ce code ? :
     border-left: none;
     border-right: none;
     width:15vw;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #recherche-bouton {
     background:#0065ff;
     color:white;
     font-family: "Raleway"; /* si on utilise body, on "fixe" la police */
-    padding:15px 20px;
+    padding:0px 20px;
     border-radius:0 10px 10px 0;
     border:0 none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: -4px;
 }
 
+p.texte-bouton-icone {
+    display: none;
+}
 
 
 /* AVERTISSEMENT
@@ -537,7 +540,14 @@ footer {
 @media only screen and (max-width: 768px) {
 
     #recherche-texte {
-        width:30vw;
+        width:50vw;
+    }
+
+    p.texte-bouton {
+        display: none;
+    }
+    p.texte-bouton-icone {
+        display: inline-block;
     }
 
     #hebergements-marseille {
