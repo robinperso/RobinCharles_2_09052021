@@ -10,7 +10,7 @@
     gris pour le fond #f2f2f2
 */
 
-/* étudier les dimensions :
+/* les dimensions :
 en rem (1rem = 16px par défaut),
 en em (fonctionne par héritage),
 en vw (par rapport à la taille du viewport)
@@ -34,19 +34,16 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 
 
 /* CONTENU, POLICES, TITRES
-- la police est en Thin, pas en Regular plus "compacte"
 */
 
 body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
-
 }
 
 /* toute la page sauf le footer */
 #contenu {
-    max-width: 1350px;
-        /* 1440px : largeur de l'image de la capture écran du projet */
+    max-width: 1350px; /* 1440px : largeur de l'image de la capture écran du projet */
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
