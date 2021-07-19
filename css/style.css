@@ -494,11 +494,12 @@ footer {
 @media screen and (min-width:768px) and (max-device-width: 1024px) {
 
     #recherche-texte {
-        width:30vw;
+        width:50vw;
     }
 
     #hebergements-marseille {
         order: 2;
+        max-width: 100%;
         width: 100%;
         /* fond devient blanc ? */
     }
@@ -514,6 +515,7 @@ footer {
 
     #populaires {
         order: 1;
+        max-width: 100%;
         width: 100%;
     }
 
@@ -546,6 +548,7 @@ footer {
     p.texte-bouton {
         display: none;
     }
+
     p.texte-bouton-icone {
         display: inline-block;
     }
@@ -579,6 +582,7 @@ footer {
 
     .img-popular {
         width: 35%;
+        max-height: 135px;
     }
 
 
