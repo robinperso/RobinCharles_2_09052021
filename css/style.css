@@ -36,9 +36,19 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 /* CONTENU, POLICES, TITRES
 */
 
+/*
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*/
+
+html {
+    margin: 0; /* reset (par defaut des navigateurs)*/
+    padding: 0; /* reset (par defaut des navigateurs)*/
+}
+
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0px;
+    margin: 0; /* reset (par defaut des navigateurs)*/
+    padding: 0; /* reset (par defaut des navigateurs)*/
 }
 
 /* toute la page sauf le footer */
@@ -517,7 +527,7 @@ footer {
     }
     
     .hebergements-marseille .vignettes-hebergements {
-        width: 94%;
+        width: 90%;
         
     }
 
@@ -578,10 +588,6 @@ footer {
 
     .box-hebergements {
         max-width: 100%;
-        width: 100%;
-    }
-
-    .hebergements-marseille .vignettes-hebergements {
         width: 100%;
     }
 
