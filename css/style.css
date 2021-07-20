@@ -493,6 +493,14 @@ footer {
 /* tablettes */
 @media screen and (min-width:768px) and (max-device-width: 1024px) {
 
+    header {
+        margin: 1rem;
+    }
+    
+    #recherche-et-filtres {
+        margin: 1rem;
+    }
+
     #recherche-texte {
         width:50vw;
     }
@@ -524,7 +532,7 @@ footer {
     }
 
     #activites-a-marseille {
-        width: 100%;
+        width: 90%;
         margin: 2rem;
     }
 
@@ -540,6 +548,14 @@ footer {
 "Iphone X" : 812px
 */
 @media only screen and (max-width: 768px) {
+
+    header {
+        margin: 1rem;
+    }
+    
+    #recherche-et-filtres {
+        margin: 1rem;
+    }
 
     #recherche-texte {
         width:50vw;
@@ -557,7 +573,7 @@ footer {
         order: 2;
         max-width: 100%;
         width: 100%;
-        background-color: white; /* le fond devient blanc ... */
+        background-color: white;
     }
 
     .box-hebergements {
@@ -580,14 +596,17 @@ footer {
         width: 100%;
     }
 
+    .box-populaires {
+        overflow: scroll;
+    }
+
     .img-popular {
         width: 35%;
         max-height: 135px;
     }
 
-
     #activites-a-marseille {
-        width: 100%;
+        width: 90%;
         margin: 2.5rem;
     }
 
@@ -600,14 +619,17 @@ footer {
       flex-direction: column;
       padding: 2rem;
     }
+
     .footer-colonne-largeur {
       width: 100%;
       padding: 0;
       margin: 1rem 0;
     }
+
     .footer-colonne-largeur:first-child {
       margin-top: 0;
     }
+    
     .footer-colonne-largeur:last-child {
       margin-bottom: 0;
     }
