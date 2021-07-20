@@ -63,7 +63,7 @@ body {
 h1, h2, h3 {
     /* 500 ou 400 => trop fin, et toujours en Thin... */
     font-weight: 500;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .slogan h1 {
@@ -419,7 +419,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
 }
 
 .photo-activites {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 }
 
 .sous-titre-activites {
@@ -557,7 +557,7 @@ footer {
 "Iphone 8 plus" : 736px
 "Iphone X" : 812px
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     header {
         margin: 1rem;
