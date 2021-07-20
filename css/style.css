@@ -56,14 +56,14 @@ h1, h2, h3 {
     font-weight: bolder;
 }
 
-#slogan h1 {
+.slogan h1 {
     margin-bottom: -10px;
 }
 
 
 /* HEADER */
 
-#header {
+.logo-et-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,13 +85,13 @@ utilité de ce code ? :
     -o-border-radius:10px 0 0 10px;
 */
 
-#recherche {
+.recherche {
     margin-top: 30px;
     margin-bottom: 30px;
     display:inline;
 }
 
-#recherche-icone {
+.recherche-icone {
     background: #f2f2f2;
     padding:15px 15px;
     border-radius:10px 0 0 10px;
@@ -99,7 +99,7 @@ utilité de ce code ? :
     margin-right:-4px;
 }
 
-#recherche-texte {
+.recherche-texte {
     background: #fff;
     padding:15px;
     border-radius:0px 0 0 0px;
@@ -111,7 +111,7 @@ utilité de ce code ? :
     font-size: 1em;
 }
 
-#recherche-bouton {
+.recherche-bouton {
     background:#0065ff;
     color:white;
     font-family: "Raleway"; /* si on utilise body, on "fixe" la police */
@@ -133,7 +133,7 @@ p.texte-bouton-icone {
 la version d'icône cerclée (grisée) et donc "light" est réservée aux comptes Awesome Pro
 */
 
-#avertissement {
+.avertissement {
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -154,7 +154,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* FILTRES */
 
-#filtres {
+.filtres {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -204,7 +204,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* HEBERGEMENTS */
 
-#hebergements-et-populaires {
+.hebergements-et-populaires {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -213,7 +213,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     max-width: 1350px;
 }
 
-#hebergements-marseille {
+.hebergements-marseille {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -225,7 +225,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     width: 60%;
 }
 
-#vignettes-hebergements {
+.vignettes-hebergements {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -269,7 +269,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     margin: 0 0.75rem 0.25rem 0.75rem
 }
 
-#hebergements-afficher-plus {
+.hebergements-afficher-plus {
     /* le texte s'affiche à droite des vignettes en mode tablette... */
 }
 
@@ -281,7 +281,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* POPULAIRES */
 
-#populaires {
+.populaires {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -291,13 +291,13 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     width: 28%;
 }
 
-#populaires-titre {
+.populaires-titre {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-#vignettes-populaires {
+.vignettes-populaires {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -385,7 +385,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
 
 /* ACTIVITÉS */
 
-#activites-a-marseille {
+.activites-a-marseille {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -394,7 +394,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
     max-width: 1350px;
 }
 
-#vignettes-activites {
+.vignettes-activites {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -497,31 +497,31 @@ footer {
         margin: 1rem;
     }
     
-    #recherche-et-filtres {
+    .recherche-et-filtres {
         margin: 1rem;
     }
 
-    #recherche-texte {
+    .recherche-texte {
         width:50vw;
     }
 
-    #hebergements-marseille {
+    .hebergements-marseille {
         order: 2;
         max-width: 100%;
         width: 100%;
-        /* fond devient blanc ? */
+        /* fond devient blanc sur tablette ? */
     }
 
     .box-hebergements {
         max-width: 45%;
     }
     
-    #hebergements-marseille .vignettes-hebergements {
+    .hebergements-marseille .vignettes-hebergements {
         width: 94%;
         
     }
 
-    #populaires {
+    .populaires {
         order: 1;
         max-width: 100%;
         width: 100%;
@@ -531,12 +531,12 @@ footer {
         width: 25%;
     }
 
-    #activites-a-marseille {
+    .activites-a-marseille {
         width: 90%;
         margin: 2rem;
     }
 
-    #vignettes-activites {
+    .vignettes-activites {
         justify-content: space-around;
     }
 }
@@ -553,11 +553,11 @@ footer {
         margin: 1rem;
     }
     
-    #recherche-et-filtres {
+    .recherche-et-filtres {
         margin: 1rem;
     }
 
-    #recherche-texte {
+    .recherche-texte {
         width:50vw;
     }
 
@@ -569,7 +569,7 @@ footer {
         display: inline-block;
     }
 
-    #hebergements-marseille {
+    .hebergements-marseille {
         order: 2;
         max-width: 100%;
         width: 100%;
@@ -581,7 +581,7 @@ footer {
         width: 100%;
     }
 
-    #hebergements-marseille .vignettes-hebergements {
+    .hebergements-marseille .vignettes-hebergements {
         width: 100%;
     }
 
@@ -589,7 +589,7 @@ footer {
         width: 100%;
     }
 
-    #populaires {
+    .populaires {
         order: 1;
         border-radius: 0;
         max-width: 100%;
@@ -605,7 +605,7 @@ footer {
         max-height: 135px;
     }
 
-    #activites-a-marseille {
+    .activites-a-marseille {
         width: 90%;
         margin: 2.5rem;
     }

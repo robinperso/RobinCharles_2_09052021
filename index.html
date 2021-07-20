@@ -39,7 +39,7 @@
     <body>
         <div id="contenu">
             <header>
-                <div id="header">
+                <div class="logo-et-nav">
                     <a href="#">
                         <!-- on utilise l'icône SVG en priorité ... -->
                         <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
@@ -51,29 +51,29 @@
                     </nav>
                 </div>
 
-                <div id="slogan">
+                <div class="slogan">
                     <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
 
             </header><!-- fin header -->
 
-            <section id="recherche-et-filtres">
-                <div id="recherche">
+            <section class="recherche-et-filtres">
+                <div class="recherche">
                     <form action="#" method="get">
-                        <span id="recherche-icone">
+                        <span class="recherche-icone">
                             <i class="fas fa-map-marker-alt"></i>
                         </span>
                         <!-- JavaScript : la valeur par défaut du champs de recherche disparait au clic -->
-                        <input type="text" id="recherche-texte" value="Marseille, France" onfocus="if(this.value=='Marseille, France'){this.value=''}" onblur="if(this.value==''){this.value='Marseille, France'}">
-                        <button type="submit" id="recherche-bouton">
+                        <input type="text" class="recherche-texte" value="Marseille, France" onfocus="if(this.value=='Marseille, France'){this.value=''}" onblur="if(this.value==''){this.value='Marseille, France'}">
+                        <button type="submit" class="recherche-bouton">
                             <p class="texte-bouton">Rechercher</p>
                             <p class="texte-bouton-icone"><i class="fas fa-search"></i></p>  
                         </button>          
                     </form>
                 </div>
 
-                <div id="filtres">
+                <div class="filtres">
                     <h2 class="titre-filtres">Filtres</h2>
                     <div class="bouton-filtre">
                         <div class="bouton-filtre-icone">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div id="avertissement">
+                <div class="avertissement">
                     <span class="fa-stack">
                         <i class="far fa-circle fa-stack-2x"></i>
                         <i class="fas fa-info fa-stack-1x"></i>
@@ -112,13 +112,13 @@
 
             <main>
 
-                <div id="hebergements-et-populaires"><!-- flex row pour la section et le aside -->
+                <div class="hebergements-et-populaires"><!-- flex row pour la section et le aside -->
 
-                    <section id="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes hébergements à Marseille -->
+                    <section class="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes hébergements à Marseille -->
 
                         <h2>Hébergements à Marseille</h2>
 
-                        <div id="vignettes-hebergements"><!-- flex row pour les vignettes -->
+                        <div class="vignettes-hebergements"><!-- flex row pour les vignettes -->
 
                             <article class="box-hebergements">
                                 <a href="#" class="box-lien">
@@ -241,7 +241,7 @@
                             </article>
 
 
-                            <div id="hebergements-afficher-plus">
+                            <div class="hebergements-afficher-plus">
                                 <h3>Afficher plus</h3>
                             </div>
 
@@ -250,11 +250,11 @@
                     </section><!-- fin section hebergements-marseille -->
 
 
-                    <aside id="populaires"><!-- flex column pour le titre et les vignettes populaires -->
+                    <aside class="populaires"><!-- flex column pour le titre et les vignettes populaires -->
 
-                        <h2 id="populaires-titre">Les plus populaires <i class="fas fa-chart-line fa-sm" style="align-items: center;"></i></h2>
+                        <h2 class="populaires-titre">Les plus populaires <i class="fas fa-chart-line fa-sm" style="align-items: center;"></i></h2>
 
-                        <div id="vignettes-populaires"><!-- flex column + flex-start pour les vignettes -->
+                        <div class="vignettes-populaires"><!-- flex column + flex-start pour les vignettes -->
 
                             <article class="box-populaires">
                                 <a href="#">
@@ -317,11 +317,11 @@
                 </div><!-- fin hebergement et populaires -->
 
 
-                <section id="activites-a-marseille"><!-- flex column pour toute la section titre + vignettes -->
+                <section class="activites-a-marseille"><!-- flex column pour toute la section titre + vignettes -->
 
                     <h2>Activités à Marseille</h2>
 
-                    <div id="vignettes-activites"><!-- flex row des vignettes -->
+                    <div class="vignettes-activites"><!-- flex row des vignettes -->
 
                         <div class="box-activites">
                             <a href="#" class="box-lien">
