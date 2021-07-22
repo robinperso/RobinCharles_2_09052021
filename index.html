@@ -44,9 +44,21 @@
                         <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
                     </a>
                     <nav>
-                        <a href="#hebergements-et-populaires">Hébergements</a>
-                        <a href="#activites-a-marseille">Activités</a>
-                        <a href="#">S'inscrire</a>
+                        <ul>
+                            <div class="menu-double">
+                                <li class="nav-hebergement">
+                                        <a href="#hebergements-et-populaires">Hébergements</a>
+                                </li>
+                                <li class="nav-activite">
+                                        <a href="#activites-a-marseille">Activités</a>
+                                </li>
+                            </div>
+                            <div class="menu-sinscrire">
+                                <li class="nav-sincrire">
+                                    <a href="#" class="sinscrire">S'inscrire</a>
+                                </li>
+                            </div>
+                        </ul>
                     </nav>
                 </div>
 
@@ -111,7 +123,7 @@
 
             <main>
 
-                <div class="hebergements-et-populaires"><!-- flex row pour la section et le aside -->
+                <div id="hebergements-et-populaires"><!-- flex row pour la section et le aside -->
 
                     <section class="hebergements-marseille"><!-- flex column pour l'ensemble titre + vignettes hébergements à Marseille -->
 
@@ -316,7 +328,7 @@
                 </div><!-- fin hebergement et populaires -->
 
 
-                <section class="activites-a-marseille"><!-- flex column pour toute la section titre + vignettes -->
+                <section id="activites-a-marseille"><!-- flex column pour toute la section titre + vignettes -->
 
                     <h2>Activités à Marseille</h2>
 

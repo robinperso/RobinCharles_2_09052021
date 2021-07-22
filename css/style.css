@@ -33,7 +33,7 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 
 
 
-/* CONTENU, POLICES, TITRES
+/* CONTENU, POLICES, TITRES, SLOGAN
 */
 
 /*
@@ -54,8 +54,8 @@ body {
 /* toute la page sauf le footer */
 #contenu {
     max-width: 1350px; /* 1440px : largeur de l'image de la capture écran du projet */
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -78,13 +78,45 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+    /*padding: 30px 0px;*/
+}
+
+header nav ul {
+    margin-top: 0px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
+    font-weight: 500;
 }
+
+.menu-double {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.nav-hebergement {
+    text-align: center;
+    border-top: 3px solid #0065FC;
+    border-bottom: 0px solid #0065FC;
+    padding: 20px;
+}
+
+.nav-activite {
+    text-align: center;
+    padding: 22px;
+}
+
+.nav-sincrire {
+    text-align: center;
+    padding: 22px;
+}
+
 
 /* RECHERCHE
 
@@ -214,7 +246,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 /* HEBERGEMENTS */
 
-.hebergements-et-populaires {
+#hebergements-et-populaires {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -279,9 +311,10 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     margin: 0 0.75rem 0.25rem 0.75rem
 }
 
+/* le texte s'affiche à droite des vignettes en mode tablette... 
 .hebergements-afficher-plus {
-    /* le texte s'affiche à droite des vignettes en mode tablette... */
-}
+
+}*/
 
 .box-lien {
     text-decoration: none;
@@ -395,7 +428,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
 
 /* ACTIVITÉS */
 
-.activites-a-marseille {
+#activites-a-marseille {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -541,7 +574,7 @@ footer {
         width: 25%;
     }
 
-    .activites-a-marseille {
+    #activites-a-marseille {
         width: 90%;
         margin: 2rem;
     }
@@ -560,7 +593,7 @@ footer {
 @media only screen and (max-width: 767px) {
 
     header {
-        margin: 1rem;
+        margin-top: 0px;
     }
     
     .recherche-et-filtres {
@@ -568,7 +601,7 @@ footer {
     }
 
     .recherche-texte {
-        width:50vw;
+        width:40vw;
     }
 
     p.texte-bouton {
@@ -611,7 +644,7 @@ footer {
         max-height: 135px;
     }
 
-    .activites-a-marseille {
+    #activites-a-marseille {
         width: 90%;
         margin: 2.5rem;
     }
