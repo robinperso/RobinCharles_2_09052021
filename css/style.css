@@ -538,7 +538,7 @@ footer {
 @media screen and (min-width:768px) and (max-device-width: 1024px) {
 
     header {
-        margin: 1rem;
+        margin-top: 0px;
     }
     
     .recherche-et-filtres {
