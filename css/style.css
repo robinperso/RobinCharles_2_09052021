@@ -201,12 +201,11 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .titre-filtres {
     margin: 0 2rem 1rem 0;
-    display: flex;
-    align-items: center;
 }
 
 .bouton-filtre {
@@ -534,11 +533,14 @@ footer {
 
 /* RESPONSIVE */
 
-/* tablettes */
+/* tablettes 
+1025 - 1279 petit écran */
 @media screen and (min-width:768px) and (max-device-width: 1024px) {
 
     header {
         margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     .recherche-et-filtres {
@@ -590,11 +592,14 @@ footer {
 "Iphone 8" : 667px
 "Iphone 8 plus" : 736px
 "Iphone X" : 812px
+980...
 */
 @media only screen and (max-width: 767px) {
 
     header {
         margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .header-menu {
@@ -618,6 +623,10 @@ footer {
         margin: 1rem;
     }
 
+    .titre-filtres {
+        width: 100%;
+    }
+    
     .recherche-texte {
         width:40vw;
     }
@@ -664,12 +673,14 @@ footer {
 
     #activites-a-marseille {
         width: 90%;
-        margin: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .photo-activites-1, .photo-activites-2, .photo-activites-3, .photo-activites-4, .photo-activites-5, .photo-activites-6 {
     /* activités : les images ont la même hauteur... */
         height: 120px;
+        width: 90vw;
     }
 
     .footer-colonne {
