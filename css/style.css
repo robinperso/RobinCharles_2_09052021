@@ -249,7 +249,6 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
-    max-width: 1350px;
 }
 
 .hebergements-marseille {
@@ -428,7 +427,6 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    /*max-width: 1350px;*/
 }
 
 .vignettes-activites {
@@ -622,11 +620,6 @@ footer {
         width: 100%;
     }
 
-    /* ne semble pas nécessaire
-    .box-populaires {
-        overflow: scroll;
-    }*/
-
     .img-popular {
         width: 35%;
         max-height: 135px;
@@ -670,15 +663,15 @@ footer {
 @media screen and (min-width:769px) and (max-device-width: 1023px) {
 
     .logo-et-nav {
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
     }
     
     .slogan {
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
     }
     
     .recherche-et-filtres {
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
     }
 
     .recherche-texte {
@@ -731,15 +724,15 @@ footer {
 @media screen and (min-width:1024px) and (max-device-width: 1355px) {
     
     .logo-et-nav {
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
     }
     
     .slogan {
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
     }
     
     .recherche-et-filtres {
-        margin: 1rem;
+        margin: 0 1rem 0 1rem;
     }
 
     .recherche-texte {
