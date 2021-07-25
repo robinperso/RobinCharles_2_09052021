@@ -666,9 +666,7 @@ footer {
 @media screen and (min-width:769px) and (max-device-width: 1023px) {
 
     header {
-        margin-top: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0 1rem 0 1rem;
     }
     
     .recherche-et-filtres {
@@ -725,9 +723,7 @@ footer {
 @media screen and (min-width:1024px) and (max-device-width: 1355px) {
     
     header {
-        margin-top: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0 1rem 0 1rem;
     }
     
     .recherche-et-filtres {
