@@ -526,7 +526,7 @@ footer {
 
 
 
-/* RESPONSIVE */
+/************* RESPONSIVE **************/
 
 /* breakpoint inspirés de https://tailwindcss.com/docs/breakpoints */
 
@@ -549,12 +549,9 @@ footer {
 
     .menu-double {
         position: absolute;
-        width: 110%;
+        width: 100%;
         bottom: 0;
         left: 0;
-        justify-content: space-between;
-        align-content: center;
-        margin-left: -5%;
     }
 
     .nav-hebergement {
@@ -686,7 +683,8 @@ footer {
         order: 2;
         max-width: 100%;
         width: 100%;
-        /* fond devient blanc sur tablette ? */
+        background-color: white; /* fond devient blanc sur tablette ? */
+        border-radius: 0;
     }
 
     .box-hebergements {
@@ -702,6 +700,7 @@ footer {
         order: 1;
         max-width: 100%;
         width: 100%;
+        border-radius: 0;
     }
 
     .img-popular {
@@ -743,7 +742,8 @@ footer {
         order: 2;
         max-width: 100%;
         width: 100%;
-        /* fond devient blanc sur tablette ? */
+        background-color: white; /* fond devient blanc sur tablette ? */
+        border-radius: 0;
     }
 
     .box-hebergements {
@@ -759,6 +759,7 @@ footer {
         order: 1;
         max-width: 100%;
         width: 100%;
+        border-radius: 0;
     }
 
     .img-popular {
