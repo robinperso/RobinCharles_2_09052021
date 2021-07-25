@@ -62,10 +62,6 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-.slogan h1 {
-    margin-bottom: -10px;
-}
-
 
 /* HEADER */
 
@@ -74,7 +70,7 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /*padding: 30px 0px;*/
+    margin: 0 1rem 0 1rem;
 }
 
 header nav ul {
@@ -114,15 +110,20 @@ nav a {
     padding: 22px;
 }
 
+.slogan {
+    margin: 0 1rem 0 1rem;
+}
 
-/* RECHERCHE
+.slogan h1 {
+    margin-bottom: -10px;
+}
 
--moz-border-radius pose problème dans la console : propriété inconnue...
-utilité de ce code ? :
-    -moz-border-radius:10px 0 0 10px;
-    -webkit-border-radius:10px 0 0 10px;
-    -o-border-radius:10px 0 0 10px;
-*/
+
+/* RECHERCHE */
+
+.recherche-et-filtres {
+    margin: 0 1rem 0 1rem;
+}
 
 .recherche {
     margin-top: 30px;
@@ -534,8 +535,12 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    header {
+    .logo-et-nav {
         margin: 1rem;
+    }
+    
+    .slogan {
+        margin: 0 1rem 0 1rem;
     }
 
     .header-menu {
@@ -664,8 +669,12 @@ footer {
 */
 @media screen and (min-width:769px) and (max-device-width: 1023px) {
 
-    header {
-        margin: 0 1rem 0 1rem;
+    .logo-et-nav {
+        margin: 1rem;
+    }
+    
+    .slogan {
+        margin: 1rem;
     }
     
     .recherche-et-filtres {
@@ -721,8 +730,12 @@ footer {
 */
 @media screen and (min-width:1024px) and (max-device-width: 1355px) {
     
-    header {
-        margin: 0 1rem 0 1rem;
+    .logo-et-nav {
+        margin: 1rem;
+    }
+    
+    .slogan {
+        margin: 1rem;
     }
     
     .recherche-et-filtres {
