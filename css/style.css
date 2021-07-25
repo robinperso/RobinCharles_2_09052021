@@ -1,7 +1,7 @@
 /*
  Description:  projet 2 OpenClassrooms - cursus Développeur web
  Author:       Robin Charles
- Version:      0.3
+ Version:      0.5
 */
 
 /* couleurs par défaut :
@@ -427,7 +427,7 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    max-width: 1350px;
+    /*max-width: 1350px;*/
 }
 
 .vignettes-activites {
@@ -617,9 +617,10 @@ footer {
         width: 100%;
     }
 
+    /* ne semble pas nécessaire
     .box-populaires {
         overflow: scroll;
-    }
+    }*/
 
     .img-popular {
         width: 35%;
