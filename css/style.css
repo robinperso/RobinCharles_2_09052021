@@ -87,6 +87,10 @@ nav a {
     margin-right: 15px;
 }
 
+nav a:hover {
+    color: #0065fc;
+}
+
 .menu-double {
     display: flex;
     flex-wrap: wrap;
@@ -292,7 +296,6 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
     margin: 0;
 }
 
-/* le h3 est pas assez gras et ramassé... */
 .box-hebergements-titre {
     margin: 0.25rem 0.75rem 0 0.75rem;
 }
@@ -304,11 +307,6 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 .box-hebergements-etoiles {
     margin: 0 0.75rem 0.25rem 0.75rem
 }
-
-/* le texte s'affiche à droite des vignettes en mode tablette... 
-.hebergements-afficher-plus {
-
-}*/
 
 .box-lien {
     text-decoration: none;
@@ -527,8 +525,7 @@ footer {
 
 /* breakpoint inspirés de https://tailwindcss.com/docs/breakpoints */
 
-
-/* mobiles 
+/* petits smartphones 
 */
 
 @media screen and (max-width: 768px) {
@@ -658,7 +655,7 @@ footer {
   }
 
 
-/* mobiles plus grands et tablettes
+/* smartphones plus grands et tablettes
 */
 @media screen and (min-width:769px) and (max-device-width: 1023px) {
 
@@ -718,8 +715,13 @@ footer {
 
 
 /* mobiles plus grands et tablettes
-1280 pour tailwind
-1355 pour se caler sur la largeur la page
+
+selon tailwind :
+min-width:1280px 
+min-width:1536px 
+
+ici :
+1355px pour se caler sur la largeur la page
 */
 @media screen and (min-width:1024px) and (max-device-width: 1355px) {
     
