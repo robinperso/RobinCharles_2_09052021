@@ -659,7 +659,7 @@ footer {
   }
 
 
-/* smartphones plus grands et tablettes
+/* smartphones et tablettes
 */
 @media screen and (min-width:769px) and (max-device-width: 1023px) {
 
@@ -722,10 +722,11 @@ footer {
 }
 
 
-/* mobiles plus grands et tablettes
+/* smartphones plus grands et tablettes
 
-selon tailwind :
+les breakpoints de tailwind :
 min-width:1280px 
+et
 min-width:1536px 
 
 ici :
