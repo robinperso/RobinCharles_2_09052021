@@ -629,6 +629,13 @@ footer {
         padding: 0 0 20px 0;
         width: 50%;
     }
+
+    .nav-sincrire {
+        position: absolute;
+        top: 22px;
+        right: 5px;
+        padding:0;
+    }
     
     .recherche-et-filtres {
         margin: 1rem;
