@@ -174,7 +174,7 @@ p.texte-bouton-icone {
 
 /* AVERTISSEMENT
 "plus de 500 logements..."
-la version d'icône cerclée (grisée) et donc "light" est réservée aux comptes Awesome Pro
+la version d'icône cerclée et grisée est réservée aux comptes Awesome Pro
 */
 
 .avertissement {
@@ -382,7 +382,7 @@ la version d'icône cerclée (grisée) et donc "light" est réservée aux compte
 
 .box-populaires-etoiles {
     margin: 0 0.75rem 0.25rem 0.75rem; /* améliorer le rem, enlever margin-top */
-    margin-top: 30px;
+    margin-top: 2rem; /* 30px */
 }
 
 .photo-populaires {
@@ -622,6 +622,10 @@ footer {
         max-height: 135px;
     }
 
+    .box-populaires-etoiles {
+        margin-top: 1rem;
+    }
+
     #activites-a-marseille {
         width: 90%;
         margin-left: 1rem;
@@ -703,6 +707,10 @@ footer {
         width: 25%;
     }
 
+    .box-populaires-etoiles {
+        margin-top: 1rem;
+    }
+
     #activites-a-marseille {
         width: 90%;
         margin: 2rem;
@@ -767,6 +775,10 @@ ici :
 
     .img-popular {
         width: 25%;
+    }
+
+    .box-populaires-etoiles {
+        margin-top: 1rem;
     }
 
     #activites-a-marseille {
