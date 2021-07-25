@@ -36,15 +36,10 @@ https://grafikart.fr/tutoriels/font-size-rem-em-px-477
 /* CONTENU, POLICES, TITRES, SLOGAN
 */
 
-html {
-    margin: 0; /* reset (par defaut des navigateurs)*/
-    padding: 0; /* reset (par defaut des navigateurs)*/
-}
+/* on utilise normalize.css comme reset CSS */
 
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0; /* reset (par defaut des navigateurs)*/
-    padding: 0; /* reset (par defaut des navigateurs)*/
 }
 
 /* toute la page sauf le footer */
