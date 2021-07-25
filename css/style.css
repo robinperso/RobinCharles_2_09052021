@@ -529,73 +529,16 @@ footer {
 
 /* RESPONSIVE */
 
-/* tablettes 
-1025 - 1279 petit écran */
-@media screen and (min-width:768px) and (max-device-width: 1024px) {
+/* breakpoint inspirés de https://tailwindcss.com/docs/breakpoints */
 
-    header {
-        margin-top: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    .recherche-et-filtres {
-        margin: 1rem;
-    }
-
-    .recherche-texte {
-        width:50vw;
-    }
-
-    .hebergements-marseille {
-        order: 2;
-        max-width: 100%;
-        width: 100%;
-        /* fond devient blanc sur tablette ? */
-    }
-
-    .box-hebergements {
-        max-width: 45%;
-    }
-    
-    .hebergements-marseille .vignettes-hebergements {
-        width: 90%;
-        
-    }
-
-    .populaires {
-        order: 1;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .img-popular {
-        width: 25%;
-    }
-
-    #activites-a-marseille {
-        width: 90%;
-        margin: 2rem;
-    }
-
-    .vignettes-activites {
-        justify-content: space-around;
-    }
-}
 
 /* mobiles 
-
-"Iphone 8" : 667px
-"Iphone 8 plus" : 736px
-"Iphone X" : 812px
-980...
 */
-@media only screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
 
     header {
-        margin-top: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 1rem;
     }
 
     .header-menu {
@@ -720,3 +663,115 @@ footer {
       margin-bottom: 0;
     }
   }
+
+
+/* mobiles plus grands et tablettes
+*/
+@media screen and (min-width:769px) and (max-device-width: 1023px) {
+
+    header {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .recherche-et-filtres {
+        margin: 1rem;
+    }
+
+    .recherche-texte {
+        width:50vw;
+    }
+
+    .hebergements-marseille {
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+        /* fond devient blanc sur tablette ? */
+    }
+
+    .box-hebergements {
+        max-width: 45%;
+    }
+    
+    .hebergements-marseille .vignettes-hebergements {
+        width: 90%;
+        
+    }
+
+    .populaires {
+        order: 1;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .img-popular {
+        width: 25%;
+    }
+
+    #activites-a-marseille {
+        width: 90%;
+        margin: 2rem;
+    }
+
+    .vignettes-activites {
+        justify-content: space-around;
+    }
+}
+
+
+/* mobiles plus grands et tablettes
+1280 pour tailwind
+1355 pour se caler sur la largeur la page
+*/
+@media screen and (min-width:1024px) and (max-device-width: 1355px) {
+    
+    header {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .recherche-et-filtres {
+        margin: 1rem;
+    }
+
+    .recherche-texte {
+        width:50vw;
+    }
+
+    .hebergements-marseille {
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+        /* fond devient blanc sur tablette ? */
+    }
+
+    .box-hebergements {
+        max-width: 45%;
+    }
+    
+    .hebergements-marseille .vignettes-hebergements {
+        width: 90%;
+        
+    }
+
+    .populaires {
+        order: 1;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .img-popular {
+        width: 25%;
+    }
+
+    #activites-a-marseille {
+        width: 90%;
+        margin: 2rem;
+    }
+
+    .vignettes-activites {
+        justify-content: space-around;
+    }
+}
