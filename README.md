@@ -29,15 +29,15 @@ https://robinperso.github.io/RobinCharles_2_09052021/
 * Le HTML et le CSS doivent être séparés et le dossier doit être organisé
 * Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
 
-### Notes
+## Notes
 
 L'intégration est faite avec l'éditeur Visual Studio Code. 
 
 Les extensions utilisées : 
-> * HTML CSS Support (CSS Intellicence for HTML : extension VS code par défaut), 
-> * Live server (serveur web local), 
-> * Prietter - Code formatter, 
-> * W3C validation ("The extension to enable W3C validation support by the Nu Html Checker library"). 
+* HTML CSS Support (CSS Intellicence for HTML : extension VS code par défaut), 
+* Live server (serveur web local), 
+* Prietter - Code formatter, 
+* W3C validation ("The extension to enable W3C validation support by the Nu Html Checker library"). 
 
 
 
