@@ -44,7 +44,7 @@ body {
 
 /* toute la page sauf le footer */
 #contenu {
-    max-width: 1408px; /* 1440px : largeur de l'image de la capture écran du projet */
+    max-width: 1408px; /* 1440px : largeur de l'image de la capture écran du projet (moins 2x1rem) */
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
