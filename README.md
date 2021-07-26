@@ -24,7 +24,7 @@ https://robinperso.github.io/RobinCharles_2_09052021/
 * Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
 * Même si aucune maquette pour la résolution tablette n'est fournis, l'intégration doit la prendre en charge.
 * Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.
-* [Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.]https://validator.w3.org/nu/?doc=https%3%2%2robinperso.github.io%2RobinCharles_2_09052021)
+* [Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.]https://validator.w3.org/nu/?doc=https://robinperso.github.io/RobinCharles_2_09052021)
 * Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 * Le HTML et le CSS doivent être séparés et le dossier doit être organisé
 * Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
