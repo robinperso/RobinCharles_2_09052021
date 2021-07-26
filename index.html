@@ -44,20 +44,18 @@
                             <img src="img/logo/Reservia.png" alt="Logo Reservia" title="Accueil Reservia" srcset="img/logo/Reservia.svg" width="97" height="45" />
                         </a>
                         <nav>
-                            <ul>
-                                <div class="menu-double">
-                                    <li class="nav-hebergement">
-                                            <a href="#hebergements-et-populaires">Hébergements</a>
-                                    </li>
-                                    <li class="nav-activite">
-                                            <a href="#activites-a-marseille">Activités</a>
-                                    </li>
-                                </div>
-                                <div class="menu-sinscrire">
-                                    <li class="nav-sincrire">
-                                        <a href="#" class="sinscrire">S'inscrire</a>
-                                    </li>
-                                </div>
+                            <ul class="menu-double">
+                                <li class="nav-hebergement">
+                                    <a href="#hebergements-et-populaires">Hébergements</a>
+                                </li>
+                                <li class="nav-activite">
+                                    <a href="#activites-a-marseille">Activités</a>
+                                </li>
+                            </ul>
+                            <ul class="menu-sinscrire">
+                                <li class="nav-sincrire">
+                                    <a href="#" class="sinscrire">S'inscrire</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -79,8 +77,8 @@
                         <!-- JavaScript : la valeur par défaut du champs de recherche disparait au clic -->
                         <input type="text" class="recherche-texte" value="Marseille, France" onfocus="if(this.value=='Marseille, France'){this.value=''}" onblur="if(this.value==''){this.value='Marseille, France'}">
                         <button type="submit" class="recherche-bouton">
-                            <p class="texte-bouton">Rechercher</p>
-                            <p class="texte-bouton-icone"><i class="fas fa-search"></i></p>  
+                            <span class="texte-bouton">Rechercher</span>
+                            <span class="texte-bouton-icone"><i class="fas fa-search"></i></span>  
                         </button>          
                     </form>
                 </div>

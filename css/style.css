@@ -44,7 +44,7 @@ body {
 
 /* toute la page sauf le footer */
 #contenu {
-    max-width: 1350px; /* 1440px : largeur de l'image de la capture écran du projet */
+    max-width: 1408px; /* 1440px : largeur de l'image de la capture écran du projet */
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
@@ -68,9 +68,8 @@ h1, h2, h3 {
     margin: 0 1rem 0 1rem;
 }
 
-header nav ul {
+header nav {
     margin-top: 0px;
-    list-style: none;
     display: flex;
     flex-flow: row wrap;
 }
@@ -90,6 +89,11 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
+    padding-left: 0;
+}
+
+.menu-sinscrire {
+    padding-left: 0;
 }
 
 .nav-hebergement {
@@ -97,16 +101,19 @@ nav a:hover {
     border-top: 3px solid #0065FC;
     border-bottom: 0px solid #0065FC;
     padding: 20px;
+    list-style: none;
 }
 
 .nav-activite {
     text-align: center;
     padding: 22px;
+    list-style: none;
 }
 
 .nav-sincrire {
     text-align: center;
-    padding: 22px;
+    padding: 7px;
+    list-style: none;
 }
 
 .slogan {
@@ -154,7 +161,7 @@ nav a:hover {
     background:#0065ff;
     color:white;
     font-family: "Raleway"; /* si on utilise body, on "fixe" la police */
-    padding:0px 20px;
+    padding:15px;
     border-radius:0 10px 10px 0;
     border:0 none;
     font-weight: bold;
@@ -162,7 +169,7 @@ nav a:hover {
     margin-left: -4px;
 }
 
-p.texte-bouton-icone {
+span.texte-bouton-icone {
     display: none;
 }
 
@@ -581,11 +588,11 @@ footer {
         width:40vw;
     }
 
-    p.texte-bouton {
+    span.texte-bouton {
         display: none;
     }
 
-    p.texte-bouton-icone {
+    span.texte-bouton-icone {
         display: inline-block;
     }
 
@@ -727,7 +734,7 @@ min-width:1536px
 ici :
 1355px pour se caler sur la largeur la page
 */
-@media screen and (min-width:1024px) and (max-device-width: 1355px) {
+@media screen and (min-width:1024px) and (max-device-width: 1408px) {
     
     .logo-et-nav {
         margin: 0 1rem 0 1rem;
