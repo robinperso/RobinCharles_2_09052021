@@ -798,6 +798,14 @@ ici :
     }
 
     .vignettes-activites {
+        max-width: 95%;
         justify-content: space-around;
+    }
+
+    .photo-activites-5, .photo-activites-6 {
+        width: 100%;
+    }
+    .photo-activites-4 {
+        width: 317px;
     }
 }
