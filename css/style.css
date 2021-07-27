@@ -352,8 +352,7 @@ la version d'icône cerclée et grisée est réservée aux comptes Awesome Pro
     border: 3px solid white;
     border-radius: 20px;
     background-color: white;
-    padding: 6px 66px 6px 6px; 
-    max-width: 80%;
+    padding: 6px;  
     margin-bottom: 29px;;
 }
 
@@ -384,7 +383,7 @@ la version d'icône cerclée et grisée est réservée aux comptes Awesome Pro
 }
 
 .box-populaires-contenu {
-    width: 70%;
+    width: 90%;
     padding: 0; 
     display: flex;
     flex-direction: column;
