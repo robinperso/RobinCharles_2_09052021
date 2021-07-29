@@ -1,7 +1,6 @@
 /*
  Description:  projet 2 OpenClassrooms - cursus Développeur web
  Author:       Robin Charles
- Version:      0.5
 */
 
 /* couleurs par défaut :
@@ -10,32 +9,8 @@
     gris pour le fond #f2f2f2
 */
 
-/* les dimensions :
-en rem (1rem = 16px par défaut),
-en em (fonctionne par héritage),
-en vw (par rapport à la taille du viewport)
-ou en px (quand il faut un espace précis)
-https://www.google.fr/search?q=rem+ou+pixel
-https://grafikart.fr/tutoriels/font-size-rem-em-px-477
-*/
 
-/* Accessibilité :
-- quand et pourquoi utiliser les attributs aria pour les lecteurs d'écran
-    https://www.lalutineduweb.fr/alternatives-textuelles-attributs-aria/
-- notamment pour cacher les icones des balises <i>
-    https://paris.wordcamp.org/2019/files/2019/04/ARIA_pour_l_accessibilite_quand_et_comment_l_utiliser.pdf
-*/
-
-/* conventions de nommage à appliquer, BEM ou OOCSS : quesaco ?
-    https://www.alsacreations.com/article/lire/1641-Bonnes-pratiques-en-CSS--BEM-et-OOCSS.html
-*/
-
-
-
-
-/* CONTENU, POLICES, TITRES, SLOGAN
-*/
-
+/* CONTENU, POLICES, TITRES, SLOGAN */
 /* on utilise normalize.css comme reset CSS */
 
 body {
