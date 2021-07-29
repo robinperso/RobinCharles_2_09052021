@@ -33,7 +33,7 @@ https://robinperso.github.io/RobinCharles_2_09052021/
 
 L'intégration est faite avec l'éditeur Visual Studio Code. 
 
-Les extensions utilisées : 
+Les extensions utilisées :
 * HTML CSS Support (CSS Intellicence for HTML : extension VS code par défaut), 
 * Live server (serveur web local), 
 * Prietter - Code formatter, 

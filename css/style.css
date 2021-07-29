@@ -776,6 +776,14 @@ ici :
         
     }
 
+    .vignettes-populaires {
+        flex-direction: row;
+    }
+
+    .box-populaires {
+        margin: 1rem;
+    }
+    
     .populaires {
         order: 1;
         max-width: 100%;
