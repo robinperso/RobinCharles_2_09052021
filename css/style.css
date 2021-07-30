@@ -8,8 +8,26 @@
 
 /* on utilise normalize.css comme reset CSS */
 
+/* fixer un pied au bas de la page
+https://www.alsacreations.com/astuce/lire/22-Comment-fixer-un-pied-au-bas-de-la-page-.html
+*/
+
+* {
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Raleway", sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 15rem;
 }
 
 /* toute la page sans le footer */
@@ -470,6 +488,10 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
 footer {
     background-color: #F2F2F2;
     width: 100%;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0
 }
 
 .footer-colonne {
@@ -607,6 +629,7 @@ footer {
         width: 90%;
         margin-left: 1rem;
         margin-right: 1rem;
+        padding-bottom: 20rem; /* fixed footer */
     }
 
     .photo-activites-1, .photo-activites-2, .photo-activites-3, .photo-activites-4, .photo-activites-5, .photo-activites-6 {
