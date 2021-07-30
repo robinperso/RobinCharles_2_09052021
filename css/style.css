@@ -769,6 +769,7 @@ ici :
 
     .vignettes-populaires {
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .box-populaires {
