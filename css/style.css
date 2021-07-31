@@ -724,13 +724,8 @@ footer {
 
 /* smartphones plus grands et tablettes
 
-les breakpoints de tailwind :
-min-width:1280px 
-et
-min-width:1536px 
-
-ici :
-1355px pour se caler sur la largeur la page
+les breakpoints de tailwindcss : https://tailwindcss.com/docs/breakpoints
+ici : 1408px pour se caler sur la largeur la page
 */
 @media screen and (min-width:1024px) and (max-device-width: 1408px) {
     
