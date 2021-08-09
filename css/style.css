@@ -8,10 +8,6 @@
 
 /* on utilise normalize.css comme reset CSS */
 
-/* fixer un pied au bas de la page
-https://www.alsacreations.com/astuce/lire/22-Comment-fixer-un-pied-au-bas-de-la-page-.html
-*/
-
 * {
     -moz-box-sizing: border-box; 
     box-sizing: border-box;
@@ -484,6 +480,10 @@ voir https://css-tricks.com/almanac/selectors/a/attribute/
 
 
 /* FOOTER */
+
+/* fixer un pied au bas de la page
+https://www.alsacreations.com/astuce/lire/22-Comment-fixer-un-pied-au-bas-de-la-page-.html
+*/
 
 footer {
     background-color: #F2F2F2;
