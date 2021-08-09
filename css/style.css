@@ -267,8 +267,7 @@ la version d'icône cerclée et grisée est réservée aux comptes Awesome Pro
 
 .box-hebergements {
     box-shadow: 0 0 20px #0000002e;
-    border: 3px solid white;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 5px 5px 10px 5px;
     background-color: white;
     margin-bottom: 32px;
@@ -329,8 +328,7 @@ la version d'icône cerclée et grisée est réservée aux comptes Awesome Pro
 }
 
 .box-populaires {
-    border: 3px solid white;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: white;
     padding: 6px;  
     margin-bottom: 29px;;
