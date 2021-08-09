@@ -25,7 +25,7 @@ https://robinperso.github.io/RobinCharles_2_09052021/
 * Même si aucune maquette pour la résolution tablette n'est fournie, l'intégration doit la prendre en charge.
 * Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible.
 * Le code devra utiliser les balises sémantiques.
-* Le code HTML et CSS ne doit contenir aucune erreur ni alerte au [validateur W3C HTML](https://validator.w3.org/nu/?doc=https://robinperso.github.io/RobinCharles_2_09052021) et [validateur W3C CSS](https://jigsaw.w3.org/css-validator/validator?uri=https://robinperso.github.io/RobinCharles_2_09052021) 
+* Le code HTML et CSS ne doit contenir aucune erreur ni alerte au [validateur W3C HTML](https://validator.w3.org/nu/?doc=https://robinperso.github.io/RobinCharles_2_09052021) et [validateur W3C CSS](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frobinperso.github.io%2FRobinCharles_2_09052021&profile=css3svg&usermedium=all&warning=1&vextwarning=) 
 * Le site doit être compatible avec les dernières versions de Chrome et Firefox.
 * Le HTML et le CSS, et les autres éléments, doivent être organisés en dossiers séparés.
 * Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
