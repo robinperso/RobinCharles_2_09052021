@@ -665,7 +665,7 @@ footer {
 
 /* smartphones et tablettes
 */
-@media screen and (min-width:769px) and (max-device-width: 1023px) {
+@media screen and (min-width:769px) and (max-width: 1023px) {
 
     .logo-et-nav {
         margin: 0 1rem 0 1rem;
@@ -731,7 +731,7 @@ footer {
 les breakpoints de tailwindcss : https://tailwindcss.com/docs/breakpoints
 ici : 1408px pour se caler sur la largeur la page
 */
-@media screen and (min-width:1024px) and (max-device-width: 1408px) {
+@media screen and (min-width:1024px) and (max-width: 1408px) {
     
     .logo-et-nav {
         margin: 0 1rem 0 1rem;
